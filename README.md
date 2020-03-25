@@ -8,6 +8,9 @@ _________________
 ### *简介*
 本项目基于 [ConnersHua](https://github.com/ConnersHua) 修改而来，时间精力有限，尽量看教程少提问！
 
+~***问题反馈 [提交Issues](https://github.com/maicoo-l/Surge/issues)***~ 
+~***订阅更新 [Telegram频道](https://t.me/who_channel)***~
+
 ## *规则集*
 ## IP-based Rule
 遇到GEOIP或IP-CIDR规则时，Surge将发送DNS问题，以检查请求的主机名是否为域。您可以选择'no-resolve'选项，以跳过带有域请求的规则。
@@ -35,9 +38,7 @@ _________________
    - 保护您的隐私并绕过审查制度
    - 保护您的孩子免受成人侵害
 
-> 默认已添加事件脚本network-changed （脚本链接如下，需更改里面 linked IP）
-
-[nextdns.io获取 linked IP](https://github.com/langkhach270389/Scripting/blob/master/Surge/nextdns_linkedip.js)
+> 默认已添加事件脚本network-changed （[~脚本链接~](https://raw.githubusercontent.com/maicoo-l/Surge/master/Script/nextdns_linkedip.js)，需更改脚本内 linked IP）
 
 ## *其他*
 
@@ -57,28 +58,26 @@ _________________
 ## *感谢*
 
 
-* [@lhie1](https://github.com/lhie1)
+** [@lhie1](https://github.com/lhie1)*
 
-* [@ConnersHua](https://github.com/ConnersHua)
+** [@ConnersHua](https://github.com/ConnersHua)*
 
-* [@chavyleung](https://github.com/chavyleung)
+** [@chavyleung](https://github.com/chavyleung)*
 
-* [@yichahucha](https://github.com/yichahucha)
+** [@yichahucha](https://github.com/yichahucha)*
 
-* [@langkhach](https://github.com/langkhach270389)
+** [@langkhach](https://github.com/langkhach270389)*
 
-* [@Choler](https://github.com/Choler)
+** [@Choler](https://github.com/Choler)*
 
-* [@Meeta](https://github.com/MeetaGit)
+** [@Meeta](https://github.com/MeetaGit)*
 
-* [@NobyDa](https://github.com/NobyDa)
+** [@NobyDa](https://github.com/NobyDa)*
 
 
 原文: https://github.com/maicoo-l/Surge
 
-
-Telegram 频道: https://t.me/who_channel
 _________________
 
-## License
+## [License](https://github.com/maicoo-l/Surge/blob/master/LICENSE)
 > 可以拷贝、转发，但是必须提供原作者信息，同时也不能将本项目用于商业用途。
