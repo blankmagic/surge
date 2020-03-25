@@ -1,5 +1,5 @@
 # Surge 规则配置文件
-_________________
+
 
 > 规则不是万能的
 
@@ -8,7 +8,7 @@ _________________
 ### *简介*
 本项目基于 [ConnersHua](https://github.com/ConnersHua) 修改而来，时间精力有限，尽量看教程少提问！
 
-~***问题反馈 [提交Issues](https://github.com/maicoo-l/Surge/issues)***~ 
+~***问题反馈 [提交Issues](https://github.com/maicoo-l/Surge/issues)***~
 ~***订阅更新 [Telegram频道](https://t.me/who_channel)***~
 
 ## *规则集*
@@ -58,21 +58,21 @@ _________________
 ## *感谢*
 
 
-** [@lhie1](https://github.com/lhie1)*
+ [@lhie1](https://github.com/lhie1)
 
-** [@ConnersHua](https://github.com/ConnersHua)*
+ [@ConnersHua](https://github.com/ConnersHua)
 
-** [@chavyleung](https://github.com/chavyleung)*
+ [@chavyleung](https://github.com/chavyleung)
 
-** [@yichahucha](https://github.com/yichahucha)*
+ [@yichahucha](https://github.com/yichahucha)
 
-** [@langkhach](https://github.com/langkhach270389)*
+ [@langkhach](https://github.com/langkhach270389)
 
-** [@Choler](https://github.com/Choler)*
+ [@Choler](https://github.com/Choler)
 
-** [@Meeta](https://github.com/MeetaGit)*
+ [@Meeta](https://github.com/MeetaGit)
 
-** [@NobyDa](https://github.com/NobyDa)*
+ [@NobyDa](https://github.com/NobyDa)
 
 
 原文: https://github.com/maicoo-l/Surge
