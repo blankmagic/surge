@@ -1,0 +1,11 @@
+# AsianMedia
+# > 愛奇藝台灣站
+DOMAIN,cache.video.iqiyi.com
+# > bilibili
+DOMAIN,api.bilibili.com
+DOMAIN,upos-hz-mirrorakam.akamaized.net
+# > MOO
+USER-AGENT,MOO*
+USER-AGENT,TencentMidasConnect*
+# > Tencent Video
+DOMAIN-SUFFIX,vv.video.qq.com
