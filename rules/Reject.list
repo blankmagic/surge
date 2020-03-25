@@ -814,8 +814,6 @@ URL-REGEX,^https?:\/\/yxyapi\d\.drcuiyutao\.com\/yxy-api-gateway\/api\/json\/adv
 URL-REGEX,^https?:\/\/images\.client\.vip\.xunlei\.com\/.+\/advert\/
 # > 讯飞
 URL-REGEX,^https?:\/\/imeclient\.openspeech\.cn\/adservice\/
-# > 云闪付
-^https:\/\/wallet\.95516\.com\/s\/wl\/icon\/large\/kjp\d+\.png$
 
 # Z
 # > 直播吧
