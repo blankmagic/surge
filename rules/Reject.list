@@ -451,7 +451,7 @@ URL-REGEX,^https?:\/\/render\.alipay\.com\/p\/s\/h5data\/prod\/spring-festival-2
 URL-REGEX,^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get\/
 URL-REGEX,^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.wireless\.home\.splash\.awesome\.get\/
 # >> 高德地图
-URL-REGEX,^https?:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/
+URL-REGEX,^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/
 # > AcFun
 URL-REGEX,^https?:\/\/aes\.acfun\.cn\/s\?adzones
 # > aiMeiJu ads
@@ -476,8 +476,8 @@ URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|mlog)
 # URL-REGEX,^https?:\/\/.+\/client\/phpui2\/
 URL-REGEX,^https?:\/\/ss0\.bdstatic\.com/.+_\d{3}_\d{4}\.jpg
 # > Bilibili
-URL-REGEX,^https?:\/\/app\.bilibili\.com\/x\/v\d\/splash\/
-URL-REGEX,^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash
+URL-REGEX,^https?+:\/\/app\.bilibili\.com\/x\/v\d\/splash\/
+ URL-REGEX,^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash		 URL-REGEX,^https?+:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash
 # > 抱抱
 URL-REGEX,^https?:\/\/www\.myhug\.cn\/ad\/
 # > 百词斩
@@ -526,12 +526,12 @@ URL-REGEX,^https?:\/\/dxy\.com\/app\/i\/ask\/biz\/feed\/launch
 URL-REGEX,^https?:\/\/capis(-slb)?\.didapinche\.com\/ad\/
 URL-REGEX,^https?:\/\/www\.didapinche\.com\/app\/adstat\/
 # > 电视家
-URL-REGEX,^https?:\/\/api\.gaoqingdianshi\.com\/api\/v\d\/ad\/
+URL-REGEX,^https?+:\/\/api\.gaoqingdianshi\.com\/api\/v\d\/ad\/
 
 # E
 # > 艺龙 (123.59.31.1,119.18.193.135)
 # (仅 Surge 可用因其支持 force-http-engine-hosts)
-URL-REGEX,^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/(adgateway|adv)\/
+URL-REGEX,^https?+:\/\/(?:119\.18\.193\.135|123\.59\.31\.1)\/ad(?:gateway|v)\/
 # > e代驾
 URL-REGEX,^https?:\/\/pic\.edaijia\.cn\/adsplash\/
 
