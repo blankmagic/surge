@@ -1,6 +1,7 @@
-/* wifi_proxy change (Made by Meeta)
-文本编辑模式下复制粘贴,TG频道已发操作教程视频
+/* 
+wifi_proxy change (Made by Meeta)
 
+[Script]
 event network-changed debug=1,script-path=wifi_proxy.js
 
 PS:记得自己修改WIFI名称
