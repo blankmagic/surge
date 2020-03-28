@@ -1,7 +1,7 @@
 /*
 Ulysses For surge (by langkhanck)
 http-response 
-^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$ requires-body=1,max-size=0,script-path=ulysses.js
+^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/maicoo-l/Surge/master/Script/ulysses.js
 
 */
 
