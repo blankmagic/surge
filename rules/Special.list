@@ -1,13 +1,31 @@
-# > Mac Download
-PROCESS-NAME,aria2c
-PROCESS-NAME,fdm
-PROCESS-NAME,Folx
-PROCESS-NAME,NetTransport
-PROCESS-NAME,Thunder
-PROCESS-NAME,Transmission
-PROCESS-NAME,uTorrent
-PROCESS-NAME,WebTorrent
-PROCESS-NAME,WebTorrent Helper
+# Special
+# > General
+USER-AGENT,coffeecorp*
+USER-AGENT,restaurant-mobile*
+DOMAIN,app.adjust.com
+# > Google
+DOMAIN-SUFFIX,googletraveladservices.com
+DOMAIN,dl.google.com
+DOMAIN,mtalk.google.com
+# > Tencent
+DOMAIN,livew.l.qq.com
+DOMAIN,vd.l.qq.com
+# > Strava
+DOMAIN,analytics.strava.com
+# > Umeng
+DOMAIN,msg.umeng.com
+DOMAIN,msg.umengcloud.com
+
+# > Download
+PROCESS-NAME,aria2c,DIRECT
+PROCESS-NAME,fdm,DIRECT
+PROCESS-NAME,Folx,DIRECT
+PROCESS-NAME,NetTransport,DIRECT
+PROCESS-NAME,Thunder,DIRECT
+PROCESS-NAME,Transmission,DIRECT
+PROCESS-NAME,uTorrent,DIRECT
+PROCESS-NAME,WebTorrent,DIRECT
+PROCESS-NAME,WebTorrent Helper,DIRECT
 # > bt
 DOMAIN-KEYWORD,announce
 DOMAIN-KEYWORD,torrent
@@ -22,24 +40,3 @@ URL-REGEX,(.+.)?(torrent|announce.php?passkey=|tracker|BitTorrent|bt_key|ed2k|fi
 URL-REGEX,(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
 # > 360
 URL-REGEX,(.+\.|^)(360|so)\.(cn|com)
-
-# > General
-USER-AGENT,coffeecorp*
-USER-AGENT,restaurant-mobile*
-DOMAIN,app.adjust.com
-# > Google
-DOMAIN-SUFFIX,googletraveladservices.com
-DOMAIN,dl.google.com
-DOMAIN,mtalk.google.com
-DOMAIN,safebrowsing.googleapis.com
-# > Tencent
-DOMAIN,livew.l.qq.com
-DOMAIN,vd.l.qq.com
-# > Strava
-DOMAIN,analytics.strava.com
-# > Umeng
-DOMAIN,msg.umeng.com
-DOMAIN,msg.umengcloud.com
-# > Steam
-USER-AGENT,Steam*
-DOMAIN-SUFFIX,steamcontent.com
