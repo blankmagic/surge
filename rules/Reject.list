@@ -545,6 +545,8 @@ URL-REGEX,^https?:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?m
 URL-REGEX,^https?:\/\/app\.variflight\.com\/ad\/
 URL-REGEX,^https?:\/\/app\.variflight\.com\/v\d\/advert\/
 # G
+# > Google
+URL-REGEX,^https?:\/\/pagead2\.googlesyndication\.com\/pagead\/
 # > Gofun
 URL-REGEX,^https?:\/\/gateway\.shouqiev\.com\/fsda\/app\/bootImage\.json
 # > 国泰君安
