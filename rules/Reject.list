@@ -463,6 +463,7 @@ URL-REGEX,^https?:\/\/aes\.acfun\.cn\/s\?adzones
 # > aiMeiJu ads
 URL-REGEX,^https:\/\/api\.bjxkhc\.com\/index\.php\/app\/ios\/ads\/index$
 URL-REGEX,^https:\/\/api\.bjxkhc\.com\/index\.php\/app\/ios\/pay/ok$
+
 # B
 # > 百度
 # >> 百度网盘
@@ -470,20 +471,12 @@ URL-REGEX,^https?:\/\/pan\.baidu\.com\/rest\/2.0\/pcs\/adx
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry
 URL-REGEX,^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/
 # >> 百度贴吧
-AND,((IP-CIDR,0.0.0.0/0), (USER-AGENT,TBClient*))
-URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/(c\/(s\/splashSchedule|f\/forum\/getAdInfo)|w+\/\w+\/(sync|newRnSync|newlog|mlog))
-URL-REGEX,^http:\/\/[\s\S]*\.baidu\.com/.*ad[xs]\.php
-URL-REGEX,^https?://c.tieba.baidu.com/c/s/splashSchedule
-URL-REGEX,^https?://cover.baidu.com/cover/page/dspSwitchAds/
+URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule
+URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo
+URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|mlog)
 # >> 百度地图
 # URL-REGEX,^https?:\/\/.+\/client\/phpui2\/
 URL-REGEX,^https?:\/\/ss0\.bdstatic\.com/.+_\d{3}_\d{4}\.jpg
-# > Bilibili
-URL-REGEX,^https?:\/\/app\.bilibili\.com\/x\/v\d\/splash\/
-URL-REGEX,^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash
-URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square))
-URL-REGEX,https://api.bilibili.com/x/v2/dm/ad
-AND,((USER-AGENT,bili*), (NOT,((DOMAIN-SUFFIX,bilibili.com))),(NOT,((DOMAIN-SUFFIX,hdslb.com))))
 # > 抱抱
 URL-REGEX,^https?:\/\/www\.myhug\.cn\/ad\/
 # > 百词斩
@@ -827,9 +820,6 @@ URL-REGEX,^https?:\/\/.+\/allOne\.php\?ad_name
 # > 知乎
 USER-AGENT,^https?:\/\/www\.zhihu\.com\/api\/v4\/community-ad\/
 USER-AGENT,^https?:\/\/www\.zhihu\.com\/terms\/privacy\/confirm
-URL-REGEX,https://(api|www).zhihu.com/(fringe|zst|commercial|real_time|ad-style-service|banners|topstory/hot-lists|market/popover|mqtt|.*(launch|featured-comment-ad|recommendations|community-ad)|search/(top|tab|preset)|ab)
-AND,((USER-AGENT,ZhihuHybrid*), (NOT,((DOMAIN-SUFFIX,zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com))))
-AND,((USER-AGENT,osee2*), (NOT,((DOMAIN-SUFFIX,zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com))))
 # > 追书神器
 URL-REGEX,^https?:\/\/(api|b)\.zhuishushenqi\.com\/advert
 URL-REGEX,^https?:\/\/api\.zhuishushenqi\.com\/splashes\/ios
@@ -840,7 +830,7 @@ URL-REGEX,^https?:\/\/itunes\.apple\.com\/lookup\?id=575826903
 URL-REGEX,^https?:\/\/api\.izuiyou\.com\/ad\/
 # > 字节跳动
 URL-REGEX,^https?:\/\/.+\.pstatp\.com\/img\/ad
-// URL-REGEX,^https?:\/\/.+\.(musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/
+URL-REGEX,^https?:\/\/.+\.(musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/
 URL-REGEX,^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/
 URL-REGEX,^https?:\/\/.+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/
 # > 中国银行
