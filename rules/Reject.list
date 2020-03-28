@@ -475,14 +475,15 @@ URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/(c\/(s\/splashSchedule|f\/forum\/get
 URL-REGEX,^http:\/\/[\s\S]*\.baidu\.com/.*ad[xs]\.php
 URL-REGEX,^https?://c.tieba.baidu.com/c/s/splashSchedule
 URL-REGEX,^https?://cover.baidu.com/cover/page/dspSwitchAds/
-URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule
-URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo
-URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|mlog)
 # >> 百度地图
 # URL-REGEX,^https?:\/\/.+\/client\/phpui2\/
 URL-REGEX,^https?:\/\/ss0\.bdstatic\.com/.+_\d{3}_\d{4}\.jpg
-# > Bilibili		 
-URL-REGEX,^https?:\/\/ap(i|p)\.bilibili\.com\/((x\/v2|pgc)\/(search\/defaultword|season\/rank\/cn|splash\/)|(pgc/season/rank/cn|x/v2/(rank.*rid=(168|5)|search/(defaultword|hot|recommend|resource))))
+# > Bilibili
+URL-REGEX,^https?:\/\/app\.bilibili\.com\/x\/v\d\/splash\/
+URL-REGEX,^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash
+URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square))
+URL-REGEX,https://api.bilibili.com/x/v2/dm/ad
+AND,((USER-AGENT,bili*), (NOT,((DOMAIN-SUFFIX,bilibili.com))),(NOT,((DOMAIN-SUFFIX,hdslb.com))))
 # > 抱抱
 URL-REGEX,^https?:\/\/www\.myhug\.cn\/ad\/
 # > 百词斩
@@ -824,24 +825,11 @@ URL-REGEX,^https?:\/\/imeclient\.openspeech\.cn\/adservice\/
 URL-REGEX,^https?:\/\/a\.qiumibao\.com\/activities\/config\.php
 URL-REGEX,^https?:\/\/.+\/allOne\.php\?ad_name
 # > 知乎
-USER-AGENT,https://api.zhihu.com/launch
-USER-AGENT,https://api.zhihu.com/ad-style-service
-USER-AGENT,https://api.zhihu.com/market/popover
-USER-AGENT,https://api.zhihu.com/real_time
-USER-AGENT,https://api.zhihu.com/app_config
-USER-AGENT,https://api.zhihu.com/ab/api
-USER-AGENT,https://api.zhihu.com/search/top_search
-USER-AGENT,https://api.zhihu.com/banner
-USER-AGENT,https://api.zhihu.com/search/preset_words
-USER-AGENT,https://api.zhihu.com/zst/events
-USER-AGENT,^https?:\/\/api\.zhihu\.com\/launch
-USER-AGENT,^https?:\/\/api\.zhihu\.com\/real_time_launch
 USER-AGENT,^https?:\/\/www\.zhihu\.com\/api\/v4\/community-ad\/
 USER-AGENT,^https?:\/\/www\.zhihu\.com\/terms\/privacy\/confirm
-
-URL-REGEX,https://(api|www).zhihu.com/(fringe|zst|commercial|real_time|ad-style-service|banners|topstory/hot-lists|market/popover|mqtt|.*(launch|featured-comment-ad|recommendations|community-ad)|search/(top|tab|preset)|ab),REJECT
-AND,((USER-AGENT,ZhihuHybrid*), (NOT,((DOMAIN-SUFFIX,zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com)))),REJECT
-AND,((USER-AGENT,osee2*), (NOT,((DOMAIN-SUFFIX,zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com)))),REJECT
+URL-REGEX,https://(api|www).zhihu.com/(fringe|zst|commercial|real_time|ad-style-service|banners|topstory/hot-lists|market/popover|mqtt|.*(launch|featured-comment-ad|recommendations|community-ad)|search/(top|tab|preset)|ab)
+AND,((USER-AGENT,ZhihuHybrid*), (NOT,((DOMAIN-SUFFIX,zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com))))
+AND,((USER-AGENT,osee2*), (NOT,((DOMAIN-SUFFIX,zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com))))
 # > 追书神器
 URL-REGEX,^https?:\/\/(api|b)\.zhuishushenqi\.com\/advert
 URL-REGEX,^https?:\/\/api\.zhuishushenqi\.com\/splashes\/ios
