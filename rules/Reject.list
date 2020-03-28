@@ -199,6 +199,8 @@ DOMAIN,applog.musical.ly
 DOMAIN,track.toutiao.com
 DOMAIN,xlog.snssdk.com
 DOMAIN,xlog-va.byteoversea.com
+DOMAIN,sf3-ttcdn-tos.pstatp.com
+DOMAIN,sf6-ttcdn-tos.pstatp.com
 # > BitAuto
 DOMAIN,adx.yiche.com
 DOMAIN,log.ycapp.yiche.com
@@ -322,6 +324,10 @@ DOMAIN,cdn.adapi.fotoable.com
 # > PeanutWiFiMpass
 DOMAIN,adnew.wifi8.com
 DOMAIN,adfile.wifi8.com
+# (R)
+# > 人人影视字幕组
+DOMAIN,tu.cvnad.com
+DOMAIN,tj.playcvn.com
 # (S)
 # > Sina
 DOMAIN-SUFFIX,beacon.sina.com.cn
@@ -544,9 +550,6 @@ URL-REGEX,^https?:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?m
 # > 飞常准
 URL-REGEX,^https?:\/\/app\.variflight\.com\/ad\/
 URL-REGEX,^https?:\/\/app\.variflight\.com\/v\d\/advert\/
-# G
-# > Google
-URL-REGEX,^https?:\/\/pagead2\.googlesyndication\.com\/pagead\/
 # > Gofun
 URL-REGEX,^https?:\/\/gateway\.shouqiev\.com\/fsda\/app\/bootImage\.json
 # > 国泰君安
