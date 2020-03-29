@@ -133,10 +133,7 @@ URL-REGEX,^https?:\/\/dsa-mfp\.fengshows\.cn\/mfp\/mfpMultipleDelivery\.do\?.+ad
 
 # g	
 # > Google		
-URL-REGEX,^https?:\/\/.+\.googlevideo\.com\/.+(&oad|ctier)		
-URL-REGEX,^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_		
-URL-REGEX,^https?:\/\/\w+\.youtube\.com\/api\/stats\/(ads|.+adformat)		
-URL-REGEX,^https?:\/\/\w+\.youtube\.com\/(pagead|ptracking)		
+URL-REGEX,^https?:\/\/pagead2\.googlesyndication\.com\/pagead\/		
 # > Gofun		
 URL-REGEX,^https?:\/\/gateway\.shouqiev\.com\/fsda\/app\/bootImage\.json		
 # > 国泰君安		
