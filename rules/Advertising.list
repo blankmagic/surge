@@ -1,5 +1,4 @@
 # --- AD Block ---
-
 # > General
 DOMAIN-KEYWORD,adservice
 
@@ -159,13 +158,6 @@ DOMAIN,duclick.baidu.com
 DOMAIN,mobads.baidu.com
 DOMAIN,mobads-logs.baidu.com
 DOMAIN,nsclick.baidu.com
-
-AND,((IP-CIDR,0.0.0.0/0), (USER-AGENT,TBClient*))
-URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/(c\/(s\/splashSchedule|f\/forum\/getAdInfo)|w+\/\w+\/(sync|newRnSync|newlog|mlog))
-URL-REGEX,^http:\/\/[\s\S]*\.baidu\.com/.*ad[xs]\.php
-URL-REGEX,^https?://c.tieba.baidu.com/c/s/splashSchedule
-URL-REGEX,^https?://cover.baidu.com/cover/page/dspSwitchAds/
-
 # > ByteDance
 DOMAIN,ad.toutiao.com
 # > BitAuto
@@ -174,11 +166,6 @@ DOMAIN,log.ycapp.yiche.com
 # > Baicizhan
 DOMAIN,advertise.baicizhan.com
 DOMAIN,advertise.baicizhan.org
-
-# > Bilibili
-URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square))
-URL-REGEX,https://api.bilibili.com/x/v2/dm/ad
-AND,((USER-AGENT,bili*), (NOT,((DOMAIN-SUFFIX,bilibili.com))), (NOT,((DOMAIN-SUFFIX,hdslb.com))))
 
 # > CNTV
 DOMAIN,galaxy.bjcathay.com
@@ -193,10 +180,6 @@ DOMAIN,adshows.21cn.com
 # > Chelaile
 DOMAIN,atrace.chelaile.net.cn
 DOMAIN,logs.chelaile.net.cn
-
-# > Didi
-
-URL-REGEX,^https:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/image-\d{4}-\d{4}\/
 
 # > ele
 DOMAIN,log.star.ele.me
@@ -372,10 +355,6 @@ DOMAIN,iyes.youku.com
 # > ZOL
 DOMAIN,apppv.zol.com.cn
 DOMAIN,pvnapp.zol.com.cn
-# > 知乎
-URL-REGEX,https://(api|www).zhihu.com/(fringe|zst|commercial|real_time|ad-style-service|banners|topstory/hot-lists|market/popover|mqtt|.*(launch|featured-comment-ad|recommendations|community-ad)|search/(top|tab|preset)|ab)
-AND,((USER-AGENT,ZhihuHybrid*), (NOT,((DOMAIN-SUFFIX,zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com))))
-AND,((USER-AGENT,osee2*), (NOT,((DOMAIN-SUFFIX,zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com))))
 
 # — Anti-Hijacking —
 
