@@ -360,7 +360,7 @@ URL-REGEX,^https?:\/\/client\.mail\.163\.com\/apptrack\/confinfo\/searchMultiAds
 # >> 网易云音乐		
 URL-REGEX,^https?:\/\/.+\/eapi\/(ad|log)\/
 # >> 网易考拉		
-URL-REGEX,^https?:\/\/sp\.kaola\.com\/api\/openad		
+URL-REGEX,^https?:\/\/sp\.kaola\.com\/api\/openad
 # >> 网易严选		
 URL-REGEX,^https?:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json		
 # >> 网易蜗牛读书		
