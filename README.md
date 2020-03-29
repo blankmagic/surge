@@ -18,7 +18,7 @@
 ## Special.list
    - 后续规则修正 - DIRECT
    
-## Reject.list / Hijacking.list
+## Reject.list
    - 含基于域名、IP 规则及 HTTP 规则 / 运营商劫持及臭名昭著的网站和应用
    
 ## GlobalMedia.list
