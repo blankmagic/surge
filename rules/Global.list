@@ -1,4 +1,7 @@
 # (DNS Cache Pollution Protection)
+# > CNN
+DOMAIN-SUFFIX,cnn.io
+DOMAIN-SUFFIX,cnn.com
 # > Google
 DOMAIN-SUFFIX,ampproject.org
 DOMAIN-SUFFIX,appspot.com
@@ -10,18 +13,15 @@ DOMAIN-SUFFIX,gvt3.com
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,blogspot
-# > Microsoft
-DOMAIN-SUFFIX,onedrive.live.com
-DOMAIN-SUFFIX,xboxlive.com
-USER-AGENT,OneDrive*
-DOMAIN-KEYWORD,microsoft
-DOMAIN-KEYWORD,onedrive
-DOMAIN-SUFFIX,azure.com
-DOMAIN-SUFFIX,live.com
-DOMAIN-SUFFIX,live.net
-DOMAIN-SUFFIX,office.com
-DOMAIN-SUFFIX,office.net
-DOMAIN-SUFFIX,skype.com
+# > Line
+DOMAIN-SUFFIX,line.me
+DOMAIN-SUFFIX,line-apps.com
+DOMAIN-SUFFIX,line-scdn.net
+DOMAIN-SUFFIX,naver.jp
+IP-CIDR,103.2.30.0/23,no-resolve
+IP-CIDR,125.209.208.0/20,no-resolve
+IP-CIDR,147.92.128.0/17,no-resolve
+IP-CIDR,203.104.144.0/21,no-resolve
 # > Facebook
 DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,fb.com
@@ -48,6 +48,37 @@ IP-CIDR,54.162.243.80/32,no-resolve
 IP-CIDR,54.173.34.141/32,no-resolve
 IP-CIDR,54.235.23.242/32,no-resolve
 IP-CIDR,169.45.248.118/32,no-resolve
+# > Microsoft
+DOMAIN-SUFFIX,onedrive.live.com
+DOMAIN-SUFFIX,xboxlive.com
+USER-AGENT,OneDrive*
+DOMAIN-KEYWORD,microsoft
+DOMAIN-KEYWORD,onedrive
+DOMAIN-SUFFIX,azure.com
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,live.net
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office.net
+DOMAIN-SUFFIX,skype.com
+# > NYTimes
+DOMAIN-SUFFIX,nyt.com
+DOMAIN-SUFFIX,nytchina.com
+DOMAIN-SUFFIX,nytcn.me
+DOMAIN-SUFFIX,nytco.com
+DOMAIN-SUFFIX,nytimes.com
+DOMAIN-SUFFIX,nytimg.com
+DOMAIN-SUFFIX,nytlog.com
+DOMAIN-SUFFIX,nytstyle.com
+# > Pixiv
+DOMAIN-SUFFIX,pixiv.org
+DOMAIN-SUFFIX,pixiv.net
+DOMAIN-SUFFIX,pximg.net
+# > Reddit
+DOMAIN-SUFFIX,redd.it
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,redditmedia.com
+DOMAIN-SUFFIX,redditlist.com
+DOMAIN-SUFFIX,redditstatic.com
 # > Twitter
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,periscope.tv
@@ -72,15 +103,7 @@ IP-CIDR,149.154.160.0/20,no-resolve
 IP-CIDR6,2001:b28:f23d::/48,no-resolve
 IP-CIDR6,2001:b28:f23f::/48,no-resolve
 IP-CIDR6,2001:67c:4e8::/48,no-resolve
-# > Line
-DOMAIN-SUFFIX,line.me
-DOMAIN-SUFFIX,line-apps.com
-DOMAIN-SUFFIX,line-scdn.net
-DOMAIN-SUFFIX,naver.jp
-IP-CIDR,103.2.30.0/23,no-resolve
-IP-CIDR,125.209.208.0/20,no-resolve
-IP-CIDR,147.92.128.0/17,no-resolve
-IP-CIDR,203.104.144.0/21,no-resolve
+
 # > Other
 DOMAIN-SUFFIX,4shared.com
 DOMAIN-SUFFIX,520cc.cc
@@ -261,14 +284,6 @@ DOMAIN-SUFFIX,nikkei.com
 DOMAIN-SUFFIX,nofile.io
 DOMAIN-SUFFIX,now.com
 DOMAIN-SUFFIX,nrk.no
-DOMAIN-SUFFIX,nyt.com
-DOMAIN-SUFFIX,nytchina.com
-DOMAIN-SUFFIX,nytcn.me
-DOMAIN-SUFFIX,nytco.com
-DOMAIN-SUFFIX,nytimes.com
-DOMAIN-SUFFIX,nytimg.com
-DOMAIN-SUFFIX,nytlog.com
-DOMAIN-SUFFIX,nytstyle.com
 DOMAIN-SUFFIX,omz-software.com:443
 DOMAIN-SUFFIX,ok.ru
 DOMAIN-SUFFIX,okex.com
@@ -284,7 +299,6 @@ DOMAIN-SUFFIX,pchome.com.tw
 DOMAIN-SUFFIX,pcloud.com
 DOMAIN-SUFFIX,picacomic.com
 DOMAIN-SUFFIX,pinimg.com
-DOMAIN-SUFFIX,pixiv.net
 DOMAIN-SUFFIX,player.fm
 DOMAIN-SUFFIX,plurk.com
 DOMAIN-SUFFIX,po18.tw
@@ -303,8 +317,6 @@ DOMAIN-SUFFIX,rakuten.co.jp
 DOMAIN-SUFFIX,readingtimes.com.tw
 DOMAIN-SUFFIX,readmoo.com
 DOMAIN-SUFFIX,redbubble.com
-DOMAIN-SUFFIX,reddit.com
-DOMAIN-SUFFIX,redditmedia.com
 DOMAIN-SUFFIX,resilio.com
 DOMAIN-SUFFIX,reuters.com
 DOMAIN-SUFFIX,reutersmedia.net
@@ -560,7 +572,6 @@ DOMAIN-SUFFIX,myactimes.com
 DOMAIN-SUFFIX,newsblur.com
 DOMAIN-SUFFIX,now.im
 DOMAIN-SUFFIX,nowe.com
-DOMAIN-SUFFIX,redditlist.com
 DOMAIN-SUFFIX,s3.amazonaws.com
 DOMAIN-SUFFIX,signal.org
 DOMAIN-SUFFIX,smartmailcloud.com
@@ -580,3 +591,15 @@ DOMAIN-SUFFIX,yimg.com
 DOMAIN,api.steampowered.com
 DOMAIN,store.steampowered.com
 DOMAIN-SUFFIX,limbopro.xyz
+
+# > FINAL
+AND,((IP-CIDR,0.0.0.0/0,no-resolve), (NOT,((GEOIP,CN))))
+AND,((IP-CIDR6,::/0,no-resolve), (NOT,((GEOIP,CN))))
+
+# > User-Agent
+AND,((USER-AGENT,JSBox*), (NOT,((GEOIP,CN))))
+AND,((USER-AGENT,Reeder*), (NOT,((GEOIP,CN))))
+
+AND,((USER-AGENT,Mozilla*), (NOT,((GEOIP,CN))))
+AND,((USER-AGENT,*Safari*), (NOT,((GEOIP,CN))))
+AND,((USER-AGENT,*Networking*), (NOT,((GEOIP,CN))))
