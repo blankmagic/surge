@@ -12,26 +12,26 @@
 ~***订阅更新 [Telegram频道](https://t.me/who_channel)***~
 
 ## *规则集*
-## IP-based Rule
-遇到GEOIP或IP-CIDR规则时，Surge将发送DNS问题，以检查请求的主机名是否为域。您可以选择'no-resolve'选项，以跳过带有域请求的规则。
-> 注意：如果某些域名不能被本地DNS服务器解析，请确保规则前面没有与该域匹配的基于IP的规则。否则，由于DNS错误，规则测试将失败。您也可以使用" no-resolve"解决问题。
-## Special.list
-   - 后续规则修正 - DIRECT
+### IP-based Rule
+*遇到GEOIP或IP-CIDR规则时，Surge将发送DNS问题，以检查请求的主机名是否为域。您可以选择’no-resolve‘选项，以跳过带有域请求的规则。*
+> 注意：如果某些域名不能被本地DNS服务器解析，请确保规则前面没有与该域匹配的基于IP的规则。否则，由于DNS错误，规则测试将失败。您也可以使用” no-resolve“解决问题。
+### Special.list
+   - *后续规则修正 - DIRECT*
    
-## Reject.list
-   - 含基于域名、IP 规则及 HTTP 规则 / 运营商劫持及臭名昭著的网站和应用
+### Advertising.list / Reject.list
+   - *含基于域名、IP 规则及 HTTP 规则 / 运营商劫持及臭名昭著的网站和应用*
    
-## GlobalMedia.list
-   - 海外流媒体服务，如需细化海外流媒体（Youtube、Netflix、PronHub...）策略需排在此规则之前
+### GlobalMedia.list
+   - *海外流媒体服务，如需细化海外流媒体（Youtube、Netflix、PronHub...）策略需排在此规则之前*
    
-## Global.list / China.list
-   - 海外加速 - Proxy / 中国直连 - DIRECT
+### Global.list / China.list
+   - *海外加速 - Proxy / 中国直连 - DIRECT*
    
-## Apple.list
-   - 如无特殊需求可不用加此策略及选择代理，在大部分地区 Apple CDN 可正常工作，使用代理后可能导致「Cannot Connect to iCloud」等问题
+### Apple.list
+   - *如无特殊需求可不用加此策略及选择代理，在大部分地区 Apple CDN 可正常工作，使用代理后可能导致「Cannot Connect to iCloud」等问题*
 _________________
 
-## 引入NextDNS （nextdns.io）默认禁用，按需开启
+## *引入NextDNS （nextdns.io）默认禁用，按需开启*
 
    - 屏蔽广告，跟踪器和恶意网站
    - 获取有关您的Internet流量的深入分析
