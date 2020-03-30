@@ -110,6 +110,8 @@ URL-REGEX,^https?:\/\/capis(-slb)?\.didapinche\.com\/ad\/
 URL-REGEX,^https?:\/\/www\.didapinche\.com\/app\/adstat\/
 # > 电视家
 URL-REGEX,^https?:\/\/api\.gaoqingdianshi\.com\/api\/v\d\/ad\/
+# > 得物（毒）
+URL-REGEX,^https?:\/\/app\.poizon\.com\/api\/v\d\/app\/advertisement\/
 
 # E
 # > 艺龙(123.59.31.1,119.18.193.135)
@@ -138,6 +140,8 @@ URL-REGEX,^https?:\/\/pagead2\.googlesyndication\.com\/pagead\/
 URL-REGEX,^https?:\/\/gateway\.shouqiev\.com\/fsda\/app\/bootImage\.json
 # > 国泰君安
 URL-REGEX,^https?:\/\/dl\.app\.gtja\.com\/dzswem\/kvController\/.+\.jpg$
+# > 高铁管家
+URL-REGEX,^https?:\/\/[a-z]*\.rsscc\.com\/trainact\/adver\/
 
 # H		
 # > 杭州公交
@@ -269,6 +273,8 @@ URL-REGEX,^https?:\/\/open\.qyer\.com\/qyer\/config\/get
 URL-REGEX,^https?:\/\/media\.qyer\.com\/ad\/
 # > 亲宝宝
 URL-REGEX,^https?:\/\/api\.qbb6\.com\/ad\/
+# > 全民K歌
+URL-REGEX,^http:\/\/y\.gtimg\.cn\/music\/common\/\/upload\/kg_ad/.*\d{4}\.jpg$
 
 # R
 # > 人人视频
