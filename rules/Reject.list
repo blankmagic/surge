@@ -172,6 +172,7 @@ URL-REGEX,^https?:\/\/www\.bodivis\.com\.cn\/app\/splashAdvertise
 
 # J
 # > 京东
+#URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$
 URL-REGEX,^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/
 URL-REGEX,^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo
 URL-REGEX,^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture
@@ -413,6 +414,11 @@ URL-REGEX,^https?:\/\/tqt\.weibo\.cn\/api\/advert\/
 URL-REGEX,^https?:\/\/api\.xiachufang\.com\/v\d\/ad/
 # > 虾米
 URL-REGEX,^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit\/
+# > 新片场
+URL-REGEX,^https?:\/\/app\.xinpianchang\.com\/open_screen\?
+# > 雪球
+URL-REGEX,^https?:\/\/101\.201\.175\.228\/ads\/display
+URL-REGEX,^https?:\/\/(?>101\.201\.175\.228|182\.92\.251\.113)\/promotion\/(?:feed_)?+display
 # > 小睡眠
 URL-REGEX,^https?:\/\/api\.psy-1\.com\/cosleep\/startup
 # > 迅游加速器
@@ -489,6 +495,8 @@ URL-REGEX,^https?:\/\/pic1cdn\.cmbchina\.com\/appinitads\/
 URL-REGEX,^https?:\/\/www\.cmbc\.com\.cn\/m\/image\/loadingpage\/
 # > 中国广发银行
 URL-REGEX,^https?:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/.{25}\.jpg
+# > 中国电信
+URL-REGEX,^https?:\/\/image1\.chinatelecom-ec\.com\/images\/\d{4}\/\d{1,2}+\/\d{1,2}+\/client\w+?\.jpg$
 # > 中国移动
 # >> 手机营业厅
 URL-REGEX,^https?:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit
