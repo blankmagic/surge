@@ -91,9 +91,12 @@ URL-REGEX,^https?:\/\/.+/V\d\/splash\/getSplashV\d\.action
 # > 超级星饭团
 URL-REGEX,^https?:\/\/g\.cdn\.pengpengla\.com\/starfantuan\/boot-screen-info\/
 
-# D		
-# > 豆瓣(154.8.131.*自签证书不可用)
-URL-REGEX,^https?:\/\/api\.douban\.com\/v\d\/app_ads\/
+# D
+# > 豆瓣
+URL-REGEX,^https?://(\d{1,3}.){1,3}\d{1,3}/view/dale-online/dale_ad/
+URL-REGEX,^https?://api.douban.com/v2/app_ads/common_ads
+URL-REGEX,^https?://frodo.douban.com/api/v2/movie/banner
+URL-REGEX,^https?://img\d.doubanio.com/view/dale-online/dale_ad
 # > 斗鱼
 URL-REGEX,^https?:\/\/rtbapi\.douyucdn\.cn\/japi\/sign\/app\/getinfo
 # > 当当
@@ -172,10 +175,13 @@ URL-REGEX,^https?:\/\/www\.bodivis\.com\.cn\/app\/splashAdvertise
 
 # J
 # > 京东
-#URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$
-URL-REGEX,^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/
-URL-REGEX,^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo
-URL-REGEX,^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture
+URL-REGEX,^https?://.+/client?functionId=lauch/lauchConfig&appName=paidaojia
+URL-REGEX,^https?://111.13.29.201/client.action\?functionId=start
+URL-REGEX,^https?://api.m.jd.com/client.action\?functionId=start
+URL-REGEX,^https?://bdsp-x.jd.com/adx/
+URL-REGEX,^https?://m.360buyimg.com/mobilecms/s640x1136_jfs/
+URL-REGEX,^https?://ms.jr.jd.com/gw/generic/base/na/m/adInfo
+URL-REGEX,^https?://img12.360buyimg.com.+width=\d{4}&height=\d{4}
 # > 界面新闻
 URL-REGEX,^https?:\/\/img\.jiemian\.com\/ads\/
 # > 驾校一点通
