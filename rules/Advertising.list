@@ -140,8 +140,7 @@ DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com
 DOMAIN-SUFFIX,unityads.unity3d.com
 
 # > Alibaba
-DOMAIN,optimus-ads.amap.com
-DOMAIN,optimus-ads.amap.com.w.alikunlun.com
+#DOMAIN,optimus-ads.amap.com
 DOMAIN,tunion-api.m.taobao.com
 # > AutoHome
 DOMAIN,adproxy.autohome.com.cn
