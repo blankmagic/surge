@@ -175,7 +175,6 @@ URL-REGEX,^https?:\/\/www\.bodivis\.com\.cn\/app\/splashAdvertise
 # > 京东
 URL-REGEX,^https?://.+/client?functionId=lauch/lauchConfig&appName=paidaojia
 URL-REGEX,^https?://111.13.29.201/client.action\?functionId=start
-URL-REGEX,^https?://api.m.jd.com/client.action\?functionId=start
 URL-REGEX,^https?://bdsp-x.jd.com/adx/
 URL-REGEX,^https?://m.360buyimg.com/mobilecms/s640x1136_jfs/
 URL-REGEX,^https?://ms.jr.jd.com/gw/generic/base/na/m/adInfo
