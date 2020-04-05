@@ -417,9 +417,6 @@ URL-REGEX,^https?:\/\/api\.xiachufang\.com\/v\d\/ad/
 URL-REGEX,^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit\/
 # > 新片场
 URL-REGEX,^https?:\/\/app\.xinpianchang\.com\/open_screen\?
-# > 雪球
-URL-REGEX,^https?:\/\/101\.201\.175\.228\/ads\/display
-URL-REGEX,^https?:\/\/(?>101\.201\.175\.228|182\.92\.251\.113)\/promotion\/(?:feed_)?+display
 # > 小睡眠
 URL-REGEX,^https?:\/\/api\.psy-1\.com\/cosleep\/startup
 # > 迅游加速器
