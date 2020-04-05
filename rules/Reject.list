@@ -285,8 +285,6 @@ URL-REGEX,^http:\/\/y\.gtimg\.cn\/music\/common\/\/upload\/kg_ad/.*\d{4}\.jpg$
 URL-REGEX,^https?:\/\/msspjh\.emarbox\.com\/getAdConfig
 URL-REGEX,^https?:\/\/api\.videozhishi\.com\/api\/getAdvertising
 URL-REGEX,^https?:\/\/api\.rr\.tv\/ad\/
-# > 人人影视
-URL-REGEX,^https?:\/\/ctrl\.(playcvn|zmzapi)\.(com|net)\/app\/(ads|init)
 # > 日日煮
 URL-REGEX,^https?:\/\/api\.daydaycook\.com\.cn\/daydaycook\/server\/ad\/
 URL-REGEX,^https?:\/\/cms\.daydaycook\.com\.cn\/api\/cms\/advertisement\/
