@@ -1,5 +1,5 @@
 #!name=URL Rewrite
-#!desc=URL Rewrite 302 & Remove ads
+#!desc=302 Redirect & Advertising Block
 #!system=ios
 
 [URL Rewrite]
