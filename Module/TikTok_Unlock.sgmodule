@@ -8,4 +8,4 @@
 
 (?<=\?version_code=)15..(?=.?.?&) 1 307
 [MITM]
-hostname = *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com
+hostname = %INSERT% *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com
