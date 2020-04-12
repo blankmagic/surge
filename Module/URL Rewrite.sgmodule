@@ -196,10 +196,7 @@
 
 # G
 # > Google
-^https?:\/\/.+\.googlevideo\.com\/.+(&oad|ctier) - reject
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ - reject
-^https?:\/\/\w+\.youtube\.com\/api\/stats\/(ads|.+adformat) - reject
-^https?:\/\/\w+\.youtube\.com\/(pagead|ptracking) - reject
+^https?:\/\/pagead2\.googlesyndication\.com\/pagead\/ - reject
 # > Gofun
 ^https?:\/\/gateway\.shouqiev\.com\/fsda\/app\/bootImage\.json - reject
 # > 国泰君安
