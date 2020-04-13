@@ -62,7 +62,7 @@
 ^https?:\/\/(www.)?yuanchengxiezuo\.com\/ https://www.teamviewer.com/ 302
 ^https?:\/\/(www.)?zbrushcn.com/ https://pixologic.com/ 302
 
-# Wiki
+# Wikipedia
 ^https://zh.(m.)?wikipedia.org/zh(-\w*)?(?=/) https://www.wikiwand.com/zh$2 302
 ^https://(\w*).(m.)?wikipedia.org/wiki https://www.wikiwand.com/$1 302
 
