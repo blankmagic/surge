@@ -1,5 +1,6 @@
 #!name=Get Cookie
-#!desc=Cron Script Get Cookie Module 您可以在使用后将其禁用，以免产生不必要的 MITM.
+#!desc=定时脚本获取 Cookie Module.
+您可以在使用后将其禁用，以免产生不必要的 MITM.
 #!system=ios
 
 [MITM]
