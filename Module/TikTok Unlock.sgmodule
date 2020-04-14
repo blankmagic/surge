@@ -5,7 +5,7 @@
 [URL Rewrite]
 (?<=_region=)CN(?=&) JP 307
 (?<=&app_version=)15..(?=.?.?&) 1 307
-
 (?<=\?version_code=)15..(?=.?.?&) 1 307
+
 [MITM]
 hostname = %INSERT% *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com
