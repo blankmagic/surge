@@ -18,9 +18,6 @@
 ### Special.list
    - *后续规则修正 - DIRECT*
    
-### Advertising.list / Reject.list
-   - *含基于域名、IP 规则及 HTTP 规则 / 运营商劫持及臭名昭著的网站和应用*
-   
 ### GlobalMedia.list
    - *海外流媒体服务，如需细化海外流媒体（Youtube、Netflix、PronHub...）策略需排在此规则之前*
    
