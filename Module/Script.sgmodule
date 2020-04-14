@@ -2,7 +2,7 @@
 #!desc=HTTP Script Module.
 
 [MITM]
-hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, *.snssdk.com, ios.prod.ftl.netflix.com, api.zhihu.com, mp.weixin.qq.com, api.m.jd.com, trade-acs.m.taobao.com, api.gamer.com.tw, ap*.intsig.net, api.gotokeep.com, www.luqijianggushi.com, p.du.163.com, api.faceapp.io, api.picsart.c*, api.meiease.c*, photos.adobe.io, buy.itunes.apple.com, api.vuevideo.net, splice.oracle.*.com, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, book.haitunwallet.com, note.youdao.com, pan.baidu.com, api.interpreter.caiyunai.com, biz.caiyunapp.com, *.xiaoxiao*.com, api.rr.tv, api.mvmtv.com, vsco.co, m.pearkin.com
+hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, *.snssdk.com, ios.prod.ftl.netflix.com, api.zhihu.com, r.inews.qq.com, mp.weixin.qq.com, api.m.jd.com, trade-acs.m.taobao.com, api.gamer.com.tw, account.wps.cn, ap*.intsig.net, api.gotokeep.com, www.luqijianggushi.com, p.du.163.com, sp.kaola.com, vsco.co, api.faceapp.io, api.picsart.c*, api.meiease.c*, photos.adobe.io, buy.itunes.apple.com, viva.v21xy.com, api.vuevideo.net, splice.oracle.*.com, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, book.haitunwallet.com, note.youdao.com, pan.baidu.com, api.interpreter.caiyunai.com, biz.caiyunapp.com, *.xiaoxiao*.com, api.rr.tv, api.mvmtv.com, api.diyidan.net, vsco.co, m.pearkin.com
 
 [Script]
 # Remove Ads + Unlock Premium.
@@ -27,6 +27,9 @@ http-response ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22vid
 # > 知乎 (By Primovist)
 http-response ^https?:\/\/api\.zhihu\.com\/(moments\?|topstory\/recommend|.*\/questions|market\/header) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/Surge/resources/script/zhihu.js
 
+# > QQ News
+http-response https://r\.inews\.qq.com\/get(QQNewsUnreadList|RecommendList) requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/QQNews.js
+
 # > 微信公众号 (By Choler)
 http-request ^https://mp\.weixin\.qq\.com/mp/getappmsgad script-path=https://Choler.github.io/Surge/Script/WeChat.js
 
@@ -42,6 +45,9 @@ http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getde
 http-request https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js
 http-response https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js
 
+# > WPS
+http-response ^https?:\/\/account\.wps\.cn\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/eHpo1/Surge/master/Script/wps.js
+
 # > CamScanner unlocks pro, Cloud scanning is not available.
 http-response https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
 
@@ -54,6 +60,12 @@ http-response https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get requires-bo
 # > Netease snail reading unlock vip
 http-response ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js
 
+# > Netease koala removes ads
+http-response ^https://sp\.kaola\.com/api/openad$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wykaola.js
+
+# > VSCO unlock vip
+http-response ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+
 # > FaceAPP
 http-response ^https?:\/\/api\.faceapp\.io(.*)\/api\/v.*\/auth\/user\/credentials requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/FaceApp.js
 
@@ -65,6 +77,9 @@ http-response ^https:\/\/photos\.adobe\.io\/v2\/accounts* requires-body=1,max-si
 
 # > inshot
 http-response https://buy.itunes.apple.com/verifyReceipt requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/surge/master/Script/inshot.js
+
+# > 小影
+http-response ^https:\/\/viva\.v21xy\.com\/api\/rest\/u\/vip requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js
 
 # > VUE video
 http-response https:\/\/api\.vuevideo\.net\/api\/v1\/(users\/.+\/profile|subtitle\/prepare) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/VUE.js
@@ -98,6 +113,9 @@ http-response ^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv
 
 # > DaQianShiJie Unlock
 http-response ^https:\/\/api\.mvmtv\.com\/index\.php.*(c=user.*a=info|a=addr.*vid=.*) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/dqsj.js
+
+# > 第一弹 (By Miao Miao)
+http-response ^https:\/\/api\.diyidan\.net\/v0\.3\/(user\/personal_homepage|vip_user\/info|tv_series\/index\?appChanne) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/Diyidan.js
 
 # > 91 short video Unlock vip
 # app download link : http://i91.porn
