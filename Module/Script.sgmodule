@@ -6,6 +6,7 @@ hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, *.snssdk.com, ios.prod
 
 [Script]
 # Remove Ads + Unlock Premium.
+
 # > YouTube 
 http-request ^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) script-path=https://Choler.github.io/Surge/Script/YouTube.js
 
