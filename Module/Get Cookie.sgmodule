@@ -1,4 +1,4 @@
-#!name=Get All Cookie
+#!name=Get Cookie
 #!desc=签到脚本 Cookie 获取，您可以在使用后将其禁用，以免产生不必要的 MITM.
 #!system=ios
 
