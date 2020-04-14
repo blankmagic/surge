@@ -46,7 +46,7 @@ http-request https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php sc
 http-response https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js
 
 # > WPS
-http-response ^https?:\/\/account\.wps\.cn\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/eHpo1/Surge/master/Script/wps.js
+http-response ^https?:\/\/account\.wps\.cn\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
 # > CamScanner unlocks pro, Cloud scanning is not available.
 http-response https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
@@ -94,7 +94,7 @@ qyxj.js = requires-body=1,max-size=0,pattern=^https:\/\/commerce-.*api\.faceu\.m
 http-response https:\/\/book\.haitunwallet\.com\/app\/vip\/status requires-body=1,max-size=0,script-path=JS/HTJZ.js
 
 # > Youdao note unlock vip (By Alex0510)
-http-response https://note.youdao.com/yws/(mapi/payment|api/self) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/surge/master/Script/ydybj.js
+http-response https://note.youdao.com/yws/(mapi/payment|api/self) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/ydybj.js
 
 # > Baidu netdisc unlocks online video play speed.
 http-response https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
