@@ -143,7 +143,6 @@ DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com,REJECT
 DOMAIN-SUFFIX,unityads.unity3d.com,REJECT
 
 # > Alibaba
-DOMAIN,optimus-ads.amap.com,REJECT
 DOMAIN,tunion-api.m.taobao.com,REJECT
 # > AutoHome
 DOMAIN,adproxy.autohome.com.cn,REJECT
