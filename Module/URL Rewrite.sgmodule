@@ -1,5 +1,5 @@
 #!name=URL Rewrite
-#!desc=302 Redirect & Advertising Block
+#!desc=URL Rewrite Module.302 Redirect & Advertising Block
 #!system=ios
 
 [URL Rewrite]

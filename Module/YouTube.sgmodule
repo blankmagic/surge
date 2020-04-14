@@ -1,5 +1,5 @@
 #!name=YouTube
-#!desc=Remove YouTube Ads
+#!desc=Remove YouTube Video Ads
 
 [MITM]
 hostname = %APPEND% *.googlevideo.com

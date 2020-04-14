@@ -1,5 +1,5 @@
 #!name=MITM
-#!desc=此 Module 仅会解密这里指定的主机名（默认发往 433 端口上的请求执行 MitM）的请求，主要包含 URL Rewrite 请求部分，您任然需要配置 CA 证书并启用 Mitm 开关。
+#!desc=MitM Module 仅会解密这里指定的主机名（默认发往 433 端口上的请求执行 MitM），主要包含 URL Rewrite 请求部分，您任然需要配置 CA 证书并启用 Mitm 开关。
 #!system=ios
 
 [MITM]
