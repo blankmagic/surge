@@ -2,7 +2,7 @@
 #!desc=HTTP Script Module.
 
 [MITM]
-hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, *.snssdk.com, *.amemv.com, *.musical.ly, ios.prod.ftl.netflix.com, api.zhihu.com, r.inews.qq.com, mp.weixin.qq.com, api.m.jd.com, api.gamer.com.tw, account.wps.cn, ap*.intsig.net, api.gotokeep.com, www.luqijianggushi.com, p.du.163.com, sp.kaola.com, vsco.co, api.faceapp.io, api.picsart.c*, api.meiease.c*, photos.adobe.io, buy.itunes.apple.com, viva.v21xy.com, api.vuevideo.net, splice.oracle.*.com, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, book.haitunwallet.com, note.youdao.com, api.termius.com, pan.baidu.com, api.interpreter.caiyunai.com, biz.caiyunapp.com, *.xiaoxiao*.com, api.rr.tv, api.mvmtv.com, api.diyidan.net, vsco.co, m.pearkin.com
+hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, *.snssdk.com, *.amemv.com, ios.prod.ftl.netflix.com, api.zhihu.com, r.inews.qq.com, mp.weixin.qq.com, api.m.jd.com, api.gamer.com.tw, account.wps.cn, ap*.intsig.net, api.gotokeep.com, www.luqijianggushi.com, p.du.163.com, sp.kaola.com, vsco.co, api.faceapp.io, api.picsart.c*, api.meiease.c*, photos.adobe.io, buy.itunes.apple.com, viva.v21xy.com, api.vuevideo.net, splice.oracle.*.com, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, book.haitunwallet.com, note.youdao.com, api.termius.com, pan.baidu.com, api.interpreter.caiyunai.com, biz.caiyunapp.com, *.xiaoxiao*.com, api.rr.tv, api.mvmtv.com, api.diyidan.net, vsco.co, m.pearkin.com
 
 [Script]
 # Remove Ads + Unlock Premium.
@@ -17,9 +17,9 @@ http-response ^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positiv
 # > Super’s Remove Ad & Logo
 //  http-response ^https?:\/\/.*\.snssdk\.com/bds/feed/stream/ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Liquor030/Sub_Ruleset/master/Script/Super.js
 
-# > 抖音 + TikTok(By Choler)
-http-request ^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post) script-path=https://Choler.github.io/Surge/Script/Aweme.js
-http-response ^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post) requires-body=true,script-path=https://Choler.github.io/Surge/Script/Aweme.js
+# > 抖音 (By Choler)
+http-request ^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post) script-path=https://Choler.github.io/Surge/Script/Aweme.js
+http-response ^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post) requires-body=true,script-path=https://Choler.github.io/Surge/Script/Aweme.js
 
 # > Display netflix ratings（IMDb、douaban）
 http-request ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
