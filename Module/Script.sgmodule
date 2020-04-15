@@ -2,7 +2,7 @@
 #!desc=HTTP Script Module.
 
 [MITM]
-hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, *.snssdk.com, ios.prod.ftl.netflix.com, api.zhihu.com, r.inews.qq.com, mp.weixin.qq.com, api.m.jd.com, trade-acs.m.taobao.com, api.gamer.com.tw, account.wps.cn, ap*.intsig.net, api.gotokeep.com, www.luqijianggushi.com, p.du.163.com, sp.kaola.com, vsco.co, api.faceapp.io, api.picsart.c*, api.meiease.c*, photos.adobe.io, buy.itunes.apple.com, viva.v21xy.com, api.vuevideo.net, splice.oracle.*.com, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, book.haitunwallet.com, note.youdao.com, api.termius.com, pan.baidu.com, api.interpreter.caiyunai.com, biz.caiyunapp.com, *.xiaoxiao*.com, api.rr.tv, api.mvmtv.com, api.diyidan.net, vsco.co, m.pearkin.com
+hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, *.snssdk.com, ios.prod.ftl.netflix.com, api.zhihu.com, r.inews.qq.com, mp.weixin.qq.com, api.m.jd.com, api.gamer.com.tw, account.wps.cn, ap*.intsig.net, api.gotokeep.com, www.luqijianggushi.com, p.du.163.com, sp.kaola.com, vsco.co, api.faceapp.io, api.picsart.c*, api.meiease.c*, photos.adobe.io, buy.itunes.apple.com, viva.v21xy.com, api.vuevideo.net, splice.oracle.*.com, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, book.haitunwallet.com, note.youdao.com, api.termius.com, pan.baidu.com, api.interpreter.caiyunai.com, biz.caiyunapp.com, *.xiaoxiao*.com, api.rr.tv, api.mvmtv.com, api.diyidan.net, vsco.co, m.pearkin.com
 
 [Script]
 # Remove Ads + Unlock Premium.
@@ -36,11 +36,6 @@ http-request ^https://mp\.weixin\.qq\.com/mp/getappmsgad script-path=https://Cho
 
 # > Display jd historical price
 http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
-
-# > Display taobao historical price
-# 不生效或失效的需要卸载 tb 重装，注意不开脚本进 tb 会失效
-http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
-http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 
 # > Bahamut animation app removes ads
 http-request https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js
