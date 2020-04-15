@@ -3,7 +3,7 @@
 #!system=ios
 
 [MITM]
-hostname = %APPEND% www.flyertea.com, wapside.189.cn:9001, www.smzdm.com, music.163.com, *.bilibili.com, act.10010.com, m.client.10010.com, zt.wps.cn, api-hdcj.9w9.com, api.m.jd.com, tieba.baidu.com, h5.ele.me, api.rr.tv, *.iqiyi.com, www.52pojie.cn, api-new.app.acfun.cn, access.video.qq.com, draw.jdfcloud.com
+hostname = %APPEND% www.flyertea.com, wapside.189.cn:9001, www.smzdm.com, music.163.com, *.bilibili.com, act.10010.com, m.client.10010.com, zt.wps.cn, api-hdcj.9w9.com, api.m.jd.com, tieba.baidu.com, h5.ele.me, api.rr.tv, *.iqiyi.com, www.52pojie.cn, api-new.app.acfun.cn, access.video.qq.com, draw.jdfcloud.com, passport.suning.com, luckman.suning.com, sign.suning.com, api.everphoto.cn, activity-1.m.duiba.com.cn, daojia.jd.com, i.meituan.com, sf-integral-sign-in.weixinjia.net, mcs-mimp-web.sf-express.com
 
 [Script]
 # > 飞客茶馆
@@ -73,3 +73,26 @@ videoqq.cookie.js = type=http-request,pattern=^https:\/\/access.video.qq.com\/us
 
 # > 微信小程序 来客有礼
 lkyl.js = type=http-request,pattern=https:\/\/draw\.jdfcloud\.com\/\/api\/turncard\/sign\,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/lkyl.js
+
+# > 苏宁易购
+# 注意有3条获取 Cookie 脚本
+http-request ^https:\/\/passport.suning.com\/ids\/login$ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js, requires-body=true
+http-request ^https:\/\/luckman.suning.com\/luck-web\/sign\/api\/clock_sign.do script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
+http-request ^https:\/\/sign.suning.com\/sign-web\/m\/promotion\/sign\/doSign.do script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
+
+# > 时光相册
+# 打开 APP 然后手动签到 1 次
+http-request ^https:\/\/api.everphoto.cn\/users\/self\/checkin\/v2 script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/everphoto/everphoto.cookie.js
+
+# > 海底捞
+http-request ^https:\/\/activity-1\.m\.duiba\.com\.cn\/signactivity\/doSign$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/haidilao/hdl.js
+
+# > 京东到家
+http-request ^https:\/\/daojia.jd.com/client(.*?)functionId=signin(.*?)userSigninNew script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jddj/jddj.cookie.js
+
+# > 美团
+http-request ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js, requires-body=true
+
+# > 顺丰速运
+http-request ^https:\/\/sf-integral-sign-in.weixinjia.net\/app\/index script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js
+http-request ^https:\/\/mcs-mimp-web.sf-express.com\/mcs-mimp\/share\/(.*?)Redirect script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js
