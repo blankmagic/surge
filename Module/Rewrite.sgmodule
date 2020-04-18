@@ -560,10 +560,3 @@ hostname = %APPEND% mobile-api.adguard.com, *.amemv.com, *.iydsj.com, *.k.sohu.c
 ^https?:\/\/ih2\.ireader\.com\/zyapi\/bookstore\/ad\/ - reject
 ^https?:\/\/ih2\.ireader\.com\/zyapi\/self\/screen\/ad - reject
 ^https?:\/\/ih2\.ireader\.com\/zycl\/api\/ad\/ - reject
-
-# Baidu Tieba
-AND,((USER-AGENT,TBClient*),(IP-CIDR,0.0.0.0/0,no-resolv)),REJECT-TINYGIF
-URL-REGEX,^https?:\/\/c\.tieba\.baidu\.com\/(c\/(s\/splashSchedule|f\/forum\/getAdInfo)|w+\/\w+\/(sync|newRnSync|newlog|mlog)),REJECT-TINYGIF
-URL-REGEX,^http:\/\/[\s\S]*\.baidu\.com/.*ad[xs]\.php,REJECT-TINYGIF
-URL-REGEX,^https?://c.tieba.baidu.com/c/s/splashSchedule,REJECT-TINYGIF
-URL-REGEX,^https?://cover.baidu.com/cover/page/dspSwitchAds/,REJECT-TINYGIF
