@@ -54,7 +54,7 @@ CamScanner = requires-body=1,max-size=0,script-path=https://raw.githubuserconten
 Keep = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Keep.js,type=http-response,pattern=https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic)
 
 # > KuWo music unlock vip
-KuWo Music = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js,type=http-response,pattern=http-response ^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice) 
+KuWo Music = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js,type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice) 
 KuWo Music = script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/KuWoMusicDownload.js,type=hhttp-request,pattern=^https?:\/\/musicpay\.kuwo.cn\/music\.pay\?uid=\d+ 
 
 # > Luqi jiang gu shi
