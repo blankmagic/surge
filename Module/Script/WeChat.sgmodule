@@ -2,7 +2,7 @@
 #!desc=Remove WeChat ads.
 
 [Script]
-http-request ^https://mp\.weixin\.qq\.com/mp/getappmsgad script-path=https://Choler.github.io/Surge/Script/WeChat.js
+WeChat = script-path=https://Choler.github.io/Surge/Script/WeChat.js,type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad
 
 [MITM]
 hostname = mp.weixin.qq.com

@@ -1,8 +1,8 @@
 #!name=YouTube
 #!desc=Remove YouTube Video Ads
 
+[Script]
+YouTube = script-path=https://Choler.github.io/Surge/Script/YouTube.js,type=http-request,pattern=^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier)
+
 [MITM]
 hostname = %APPEND% *.googlevideo.com
-
-[Script]
-YouTube.js = type=http-request,pattern=^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier),script-path=https://Choler.github.io/Surge/Script/YouTube.js
