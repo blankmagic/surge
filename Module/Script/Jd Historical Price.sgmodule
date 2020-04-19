@@ -5,4 +5,4 @@
 JD Historical Price = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js,type=http-response,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig)
 
 [MITM]
-hostname = api.m.jd.com
+hostname = %APPEND% api.m.jd.com

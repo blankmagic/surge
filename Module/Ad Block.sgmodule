@@ -4,6 +4,7 @@
 [Rule]
 # > General
 DOMAIN-KEYWORD,adservice,REJECT
+
 DOMAIN-SUFFIX,adcolony.com,REJECT
 DOMAIN-SUFFIX,adinall.com,REJECT
 DOMAIN-SUFFIX,admaster.com.cn,REJECT

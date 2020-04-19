@@ -6,4 +6,4 @@
 抖音 = requires-body=true,script-path=https://Choler.github.io/Surge/Script/Aweme.js,type=http-response,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post)
 
 [MITM]
-hostname = *.snssdk.com, *.amemv.com
+hostname = %APPEND% *.snssdk.com, *.amemv.com

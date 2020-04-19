@@ -6,4 +6,4 @@ TaoBao Historical Price = requires-body=1,script-path=https://raw.githubusercont
 TaoBao Historical Price = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,type=http-response,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail
 
 [MITM]
-hostname = trade-acs.m.taobao.com
+hostname = %APPEND% trade-acs.m.taobao.com
