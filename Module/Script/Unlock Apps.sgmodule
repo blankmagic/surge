@@ -1,0 +1,8 @@
+#!name=Unlock Many App
+#!desc=Trial. Cancel subscriptions. Restore pucharse. By Langkhach
+
+[Script]
+Unlock Many App = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=262144,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/verify_receipt.js
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
