@@ -79,7 +79,7 @@ PicsArt = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.c
 Lightroom = requires-body=1,max-size=0,script-path=https://sub.jiaowoy.top/js/Lightroom.js,type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts*
 
 # > InShot
-InShot = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/surge/master/Script/inshot.js,type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt
+InShot = requires-body=1,max-size=0,script-path=JS/inshot.js,type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt
 
 # > 小影
 VivaVideo = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js,type=http-response,pattern=^https:\/\/viva\.v21xy\.com\/api\/rest\/u\/vip
@@ -109,7 +109,7 @@ Baidu Cloud = requires-body=1,max-size=0,script-path=https://raw.githubuserconte
 彩云小译 = requires-body=1,max-size=0,script-path=JS/caiyunai.js,type=http-response,pattern=^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user
 
 # > 彩云天气 (By Alex0510)
-彩云天气 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/surge/master/Script/caiyun.js,type=http-response,pattern=https://biz.caiyunapp.com/v2/user\?app_name=weather
+彩云天气 = requires-body=1,max-size=0,script-path=JS/caiyun.js,type=http-response,pattern=https://biz.caiyunapp.com/v2/user\?app_name=weather
 
 # > 小小影视 Unlock vip
 小小影视 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xxys.js,type=http-response,pattern=https:\/\/ios\.xiaoxiaoapps\.com\/(vod\/reqplay\/|ucp/index|getGlobalData)
