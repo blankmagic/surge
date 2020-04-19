@@ -8,80 +8,116 @@ hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, *.snssdk.com, *.amemv.
 # Remove Ads + Unlock Premium.
 # > YouTube
 YouTube = script-path=https://Choler.github.io/Surge/Script/YouTube.js,type=http-request,pattern=^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier)
+
 # > 微博 (By yichahucha)
 微博 = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js,type=http-response,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua)
 微博 = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js,type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status|video/tiny_stream_video_list)
+
 # > Super’s Remove Ad & Logo
 // Super’s = requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Liquor030/Sub_Ruleset/master/Script/Super.js,type=http-response,pattern=^https?:\/\/.*\.snssdk\.com/bds/feed/stream/
+
 # > 抖音 (By Choler)
 抖音 = script-path=https://Choler.github.io/Surge/Script/Aweme.js,type=http-request,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post)
 抖音 = requires-body=true,script-path=https://Choler.github.io/Surge/Script/Aweme.js,type=http-response,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post)
+
 # > Display netflix ratings（IMDb、douaban）
 Netflix Ratings = script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
 Netflix Ratings = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
+
 # > 知乎 (By Primovist)
 Zhihu = requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/Surge/resources/script/zhihu.js,type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/(moments\?|topstory\/recommend|.*\/questions|market\/header)
+
 # > QQ News
 QQ News = requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/QQNews.js,type=http-response,pattern=https://r\.inews\.qq.com\/get(QQNewsUnreadList|RecommendList)
+
 # > 微信公众号 (By Choler)
 WeChat = script-path=https://Choler.github.io/Surge/Script/WeChat.js,type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad
+
 # > Display jd historical price
 JD historical price = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js,type=http-response,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig)
+
 # > Bahamut animation app removes ads
 Bahamut = script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js,type=http-request,pattern=https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php
 Bahamut = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js,type=http-response,pattern=https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php
+
 # > WPS
 WPS = requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js,type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\/users
+
 # > CamScanner unlocks pro, Cloud scanning is not available.
 CamScanner = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js,type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?
+
 # > Keep app unlock private lessons and action libraries.
 Keep = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Keep.js,type=http-response,pattern=https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic)
+
 # > Luqi jiang gu shi
 Luqi jiang gu shi = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/luqi.js,type=http-response,pattern=https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get
+
 # > Netease snail reading unlock vip
 Netease snail reading = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js,type=http-response,pattern=^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json
+
 # > Netease koala removes ads
 考拉 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wykaola.js,type=http-response,pattern=^https://sp\.kaola\.com/api/openad$
+
 # > VSCO unlock vip
 VSCO = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js,type=http-response,pattern=^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/
+
 # > FaceAPP
 FaceApp = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/FaceApp.js,type=http-response,pattern=^https?:\/\/api\.faceapp\.io(.*)\/api\/v.*\/auth\/user\/credentials
+
 # > PicsArt
 PicsArt = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js,type=http-response,pattern=https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json
+
 # > Lightroom
 Lightroom = requires-body=1,max-size=0,script-path=https://sub.jiaowoy.top/js/Lightroom.js,type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts*
+
 # > InShot
 InShot = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/surge/master/Script/inshot.js,type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt
+
 # > 小影
 VivaVideo = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js,type=http-response,pattern=^https:\/\/viva\.v21xy\.com\/api\/rest\/u\/vip
+
 # > VUE video
 VUE = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/VUE.js,type=http-response,pattern=https:\/\/api\.vuevideo\.net\/api\/v1\/(users\/.+\/profile|subtitle\/prepare)
+
 # > Splice
 Splice = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Splice.js,type=http-response,pattern=https:\/\/splice\.oracle\.\w+\.com\/devices\/me
+
 # > 轻颜相机
-轻颜相机 = requires-body=1,max-size=0,pattern=^https:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info,type=http-response,script-path=JS/qyxj.js
+轻颜相机 = requires-body=1,max-size=0,script-path=JS/qyxj.js,type=http-response,pattern=^https:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info
+
 # > Haitun wallet unlock vip
 Haitun wallet = requires-body=1,max-size=0,script-path=JS/HTJZ.js,type=http-response,pattern=https:\/\/book\.haitunwallet\.com\/app\/vip\/status
+
 # > Youdao note unlock vip (By Alex0510)
 Youdao note = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/ydybj.js,type=http-response,pattern=https://note.youdao.com/yws/(mapi/payment|api/self)
+
 # > Termius
-Termius = requires-body=1,max-size=0,script-update-interval=0,pattern=https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/,type=http-response,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Termius.js
+Termius = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Termius.js,type=http-response,pattern=https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/
+
 # > Baidu netdisc unlocks online video play speed.
 Baidu Cloud = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js,type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user
+
 # > 彩云小译
 彩云小译 = requires-body=1,max-size=0,script-path=JS/caiyunai.js,type=http-response,pattern=^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user
+
 # > 彩云天气 (By Alex0510)
 彩云天气 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/surge/master/Script/caiyun.js,type=http-response,pattern=https://biz.caiyunapp.com/v2/user\?app_name=weather
+
 # > 小小影视 Unlock vip
 小小影视 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xxys.js,type=http-response,pattern=https:\/\/ios\.xiaoxiaoapps\.com\/(vod\/reqplay\/|ucp/index|getGlobalData)
+
 # > rrTV (by george Jiang)
 rrTV = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/rrtv.js,type=http-response,pattern=^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail)
+
 # > DaQianShiJie Unlock
 DaQianShiJie = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/dqsj.js,type=http-response,pattern=^https:\/\/api\.mvmtv\.com\/index\.php.*(c=user.*a=info|a=addr.*vid=.*)
+
 # > 第一弹 (By Miao Miao)
 第一弹 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/Diyidan.js,type=http-response,pattern=^https:\/\/api\.diyidan\.net\/v0\.3\/(user\/personal_homepage|vip_user\/info|tv_series\/index\?appChanne)
+
 # > 91 short video Unlock vip
 # app download link : http://i91.porn
 91 short video = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/91ShortVideo.js,type=http-response,pattern="^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$"
+
 # > pear Unlock vip
 Pear = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/pear.js,type=http-response,pattern=^https:\/\/m\.pearkin\.com\/(api\/Movie\/WatchMovie|api\/Account\/CheckVip|api\/account\/IndexDetail)
