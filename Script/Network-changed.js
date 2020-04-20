@@ -61,7 +61,7 @@ NETWORK = '蜂窝网, '+$network.v4.primaryAddress;
 NETWORK = 'Wi-Fi, '+NETWORK;
 }
 if($surge.setOutboundMode(mode.toLowerCase()))
-$notification.post("Outbound Changed", NETWORK, "出站模式," "+mode+'\n'+"加入网络 "+DATE);
+$notification.post("网络状态变更", NETWORK, "出站模式," "+mode+'\n'+"加入网络 "+DATE);
 $done();
 }
 
