@@ -1,7 +1,16 @@
 /*
+Appmonitor 是一个 iOS App 价格监控脚本，设置好需要监控的 App 和 运行时间，如果 App 价格有变化，就会立即弹出通知。
+
+添加 App
+let reg = "cn" //AppStore 区域
+let apps = ["453170202","355460798","1116905928"] //Appids，具体可以通过在 AppStore 页面点分享复制下载链接内获取
+
+设定运行间隔
 [Script]
 App 价格监控 = type=cron,cronexp=0 * * * *,script-path=JS/Appmonitor.js
 
+运行间隔可根据实际情况自行填写，如上述示例中为 1小时 检查一次
+脚本只在添加了新 App 或价格有变化时才会弹出提醒，其他情况下不会弹出提醒
 */
 
 //Smart Qx&Surge + @Neurogam

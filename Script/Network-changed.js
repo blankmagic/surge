@@ -9,17 +9,14 @@ PS:记得自己修改WIFI名称 "home_ssid1or2"
 主要功能:指定Wi-Fi下,Surge自动化不同出站模式,三个值可选'Direct' or 'Rule' or 'Global-Proxy' 
 */
 
-let NETWORK = $network.wifi.ssid;
 let WHITENAME = [
-            "home_ssid1",
-            "home_ssid2"
-    ];
+    "home_ssid1",
+    "home_ssid2"
+];
 let BLACKNAME = [
-            "free_ssid1",
-            "free_ssid2"
-    ];
-
-let TAG = false;
+    "free_ssid1",
+    "free_ssid2"
+];
 
 //The default outbound, you can change it : 'Direct' or 'Rule' or 'Global-proxy'
 //BLACK|WHITE|OTHERS is to control the WIFI outbound mode, CELLULAR is to control the 2G/3G/4G outbound mode 
@@ -31,31 +28,57 @@ let WHITE = 'Rule';
 let OTHERS = 'Rule';
 let CELLULAR = 'Rule';
 
-function changeoutbound(is_cellular, MODE) {
-    if (is_cellular) {
-        NETWORK = '蜂窝网, '+$network.v4.primaryAddress;
-    }else {
-        NETWORK = 'Wi-Fi, '+NETWORK;
-    }
-    if($surge.setOutboundMode(MODE.toLowerCase()))
-        $notification.post("Outbound Changed", "Network: "+NETWORK, "Outbound Mode, "+MODE);
-    $done();
+let NETWORK = $network.wifi.ssid;
+let TAG = false;
+
+Date.prototype.format = function(fmt) { 
+var o = { 
+"M+" : this.getMonth()+1,                 
+"d+" : this.getDate(),                   
+"h+" : this.getHours(),                   
+"m+" : this.getMinutes(),                
+"s+" : this.getSeconds(),                
+"q+" : Math.floor((this.getMonth()+3)/3), 
+"S"  : this.getMilliseconds()            
+}; 
+if(/(y+)/.test(fmt)) {
+    fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length)); 
+}
+for(var k in o) {
+if(new RegExp("("+ k +")").test(fmt)){
+     fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
+ }
+}
+return fmt; 
+}        
+
+let DATE = $script.startTime.format("yyyy-MM-dd hh:mm:ss");
+
+function changeOutboundMode(is_cellular, mode) {
+if (is_cellular) {
+NETWORK = '蜂窝网, '+$network.v4.primaryAddress;
+}else {
+NETWORK = 'Wi-Fi, '+NETWORK;
+}
+if($surge.setOutboundMode(mode.toLowerCase()))
+$notification.post("Outbound Changed", NETWORK, "出站模式," "+mode+'\n'+"加入网络 "+DATE);
+$done();
 }
 
 //wifi select outbound
-if ($network.v4.primaryInterface == "en0" && $network.wifi.bssid != 'null') {
-    if (BLACKNAME.indexOf(NETWORK) != -1) {
-        changeoutbound(TAG, BLACK);
-    } else if (WHITENAME.indexOf(NETWORK) != -1) {
-        changeoutbound(TAG, WHITE);
-    } else {
-        changeoutbound(TAG, OTHERS);
-    }
+if ($network.v4.primaryInterface == "en0" && NETWORK != null) {
+if (BLACKNAME.indexOf(NETWORK) != -1) {
+changeOutboundMode(TAG, BLACK);
+} else if (WHITENAME.indexOf(NETWORK) != -1) {
+changeOutboundMode(TAG, WHITE);
+} else {
+changeOutboundMode(TAG, OTHERS);
 }
-
+}
 
 //cellular select outbound
 if($network.v4.primaryInterface == "pdp_ip0") {
-    TAG = true;
-    changeoutbound(TAG, CELLULAR);
+TAG = true;
+changeOutboundMode(TAG, CELLULAR);
 }
+$done();
