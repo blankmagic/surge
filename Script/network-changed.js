@@ -5,8 +5,8 @@ auther: tempoblink
 [Script]
 Outbound Mode = type=event,event-name=network-changed,debug=1,script-path=JS/network-changed.js
 
-PS:记得自己修改WIFI名称 "home_ssid1or2"  
-主要功能:指定Wi-Fi下,Surge使用不同出站模式,三个值可选'Direct' or 'Rule' or 'Global-Proxy' 默认 Direct
+PS:记得自己修改WIFI名称 "home_ssid1or2" 
+主要功能:指定Wi-Fi下,Surge自动化不同出站模式,三个值可选'Direct' or 'Rule' or 'Global-Proxy' 默认 Direct
 虽然设置SSID可以达到基本相同功能
 使用脚本,Surge不会被suspend
 Rewrite和Scripting依然有效
