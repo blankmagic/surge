@@ -6,9 +6,6 @@ http-response https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get requires-bo
 hostname = www.luqijianggushi.com
 */
 
-
-
-
 let obj = JSON.parse($response.body);
 obj.data.is_vip = 1;
 obj.data.vip_endtime = 1630296877;

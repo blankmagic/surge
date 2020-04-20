@@ -1,0 +1,6 @@
+#!name=App 价格监控
+#!desc=脚本文件内填入相应App id即可
+
+[Script]
+
+App 价格监控 = type=cron,cronexp=0 0 8-23/2 * * *,script-path=JS/Appmonitor.js
