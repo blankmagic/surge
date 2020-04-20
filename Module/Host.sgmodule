@@ -1,5 +1,5 @@
 #!name=Host
-#!desc=Local DNS Mapping.
+#!desc=Local DNS Mapping records.
 
 [Host]
 ip6-localhost = ::1

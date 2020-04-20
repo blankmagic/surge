@@ -1,5 +1,5 @@
 #!name=YouTube
-#!desc=Remove YouTube Video Ads
+#!desc=Remove YouTube Video Ads.
 
 [Script]
 YouTube = script-path=https://Choler.github.io/Surge/Script/YouTube.js,type=http-request,pattern=^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier)

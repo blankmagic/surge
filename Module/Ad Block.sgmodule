@@ -1,5 +1,5 @@
 #!name=Ad Block
-#!desc=Rule-SET.Ad Block & Hijacking.
+#!desc=Domain-based Rule. Ad Block & Hijacking.
 
 [Rule]
 # > General
