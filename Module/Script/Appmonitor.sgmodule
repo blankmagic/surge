@@ -1,4 +1,4 @@
-#!name=App 价格监控
+#!name=App Monitor
 #!desc=iOS App 价格监控，价格变化时会自动弹出通知。
 
 [Script]

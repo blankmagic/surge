@@ -1,7 +1,8 @@
 #!name=Ad Block
-#!desc=Domain-based Rule. Ad Block & Hijacking.
+#!desc=Domain-based Rule.
 
 [Rule]
+# -- Ad Block --
 # > General
 DOMAIN-KEYWORD,adservice,REJECT
 
