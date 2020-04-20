@@ -1,5 +1,5 @@
 /* 
-event network-changed script-path=network-changed.js
+event network-changed by Tempoblink
 
 [Script]
 Outbound Mode = type=event,event-name=network-changed,debug=1,script-path=JS/network-changed.js
