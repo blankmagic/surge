@@ -17,22 +17,24 @@ DOMAIN,msg.umeng.com
 DOMAIN,msg.umengcloud.com
 
 # > Download
-PROCESS-NAME,aria2c,DIRECT
-PROCESS-NAME,fdm,DIRECT
-PROCESS-NAME,Folx,DIRECT
-PROCESS-NAME,NetTransport,DIRECT
-PROCESS-NAME,Thunder,DIRECT
-PROCESS-NAME,Transmission,DIRECT
-PROCESS-NAME,uTorrent,DIRECT
-PROCESS-NAME,WebTorrent,DIRECT
-PROCESS-NAME,WebTorrent Helper,DIRECT
+PROCESS-NAME,aria2c
+PROCESS-NAME,fdm
+PROCESS-NAME,Folx
+PROCESS-NAME,NetTransport
+PROCESS-NAME,Thunder
+PROCESS-NAME,Transmission
+PROCESS-NAME,uTorrent
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,WebTorrent Helper
 # > bt
 DOMAIN-KEYWORD,announce
 DOMAIN-KEYWORD,torrent
 DOMAIN-KEYWORD,tracker
 DOMAIN-SUFFIX,smtp
 DOMAIN-KEYWORD,aria2
+URL-REGEX,(Subject|HELO|SMTP)
 # > 迅雷
 URL-REGEX,(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
+DOMAIN-SUFFIX,xunlei.com
 # > 360
 URL-REGEX,(.+\.|^)(360|so)\.(cn|com)
