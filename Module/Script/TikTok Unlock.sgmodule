@@ -1,5 +1,5 @@
-#!name=TikTok Unlock
-#!desc=Remove TikTok's regional restrictions.
+#!name=TikTok
+#!desc=解除 TikTok 区域限制。
 #!system=ios
 
 [URL Rewrite]

@@ -18,7 +18,6 @@ YouTube = script-path=https://Choler.github.io/Surge/Script/YouTube.js,type=http
 
 # > 抖音 & TikTok (By Choler)
 抖音 & TikTok = type=http-request,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js
-
 抖音 & TikTok = type=http-response,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js
 
 # > Display netflix ratings（IMDb、douaban）

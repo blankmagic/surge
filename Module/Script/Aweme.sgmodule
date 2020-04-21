@@ -1,9 +1,12 @@
 #!name=抖音
 #!desc=Remove Aweme ads and watermark.
 
+[URL Rewrite]
+^https://aweme-eagle(.*)\.snssdk\.com/aweme/v2/ https://aweme-eagle$1.snssdk.com/aweme/v1/ 302
+
 [Script]
-抖音 = script-path=https://Choler.github.io/Surge/Script/Aweme.js,type=http-request,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post)
-抖音 = requires-body=true,script-path=https://Choler.github.io/Surge/Script/Aweme.js,type=http-response,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post)
+抖音 & TikTok = type=http-request,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js
+抖音 & TikTok = type=http-response,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js
 
 [MITM]
-hostname = %APPEND% *.snssdk.com, *.amemv.com
+hostname = %APPEND% *.snssdk.com, *.amemv.com, *.musical.ly
