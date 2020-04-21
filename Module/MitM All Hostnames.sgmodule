@@ -1,5 +1,5 @@
 #!name=MitM All Hostnames
-#!desc=Perform MitM on all hostnames with port 443, except those to Apple and other common sites which can‘t be inspected. You still need configure CA certificate and enable the main switch of MitM.
+#!desc=在端口443上的所有主机名上执行 MitM，但 Apple 和其他无法检查的常见站点除外。您仍然需要配置 CA 证书并启用 MitM 开关。
 
 [MITM]
 hostname = -*.apple.com, -*.icloud.com, -*.mzstatic.com, -*.crashlytics.com, -*.facebook.com, -*.instagram.com, *

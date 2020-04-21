@@ -1,5 +1,5 @@
 #!name=Cron Script
-#!desc=Execute script at specified times.
+#!desc=签到类脚本，可以指定时间执行。
 
 [Script]
 一言 = script-path=JS/Calendar.js,type=cron,cronexp="0 0 8,18 * * *"

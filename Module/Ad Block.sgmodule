@@ -1,5 +1,5 @@
 #!name=Ad Block
-#!desc=Domain-based Rule.
+#!desc=拦截广告以及隐私追踪，屏蔽部分运营商劫持网页弹出流量统计。
 
 [Rule]
 # -- Ad Block --
