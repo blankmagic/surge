@@ -1,4 +1,4 @@
-#!name=HTTP Script
+#!name=HTTP JS
 #!desc=修改 HTTP 请求或响应类脚本，值字段是一个正则表达式，用于匹配请求。
 
 [MITM]

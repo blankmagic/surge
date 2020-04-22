@@ -1,4 +1,4 @@
-#!name=Cron Script
+#!name=Cron JS
 #!desc=签到类脚本，可以指定时间执行。
 
 [Script]
