@@ -14,7 +14,7 @@
 喜马拉雅 = type=cron,cronexp="0 2 0 * * *",script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js
 
 # > 微信小程序 活动抽奖 (By @makexp & @zZPiglet)
-微信小程序 活动抽奖 = type=cron,cronexp="40 2 0 * * *",script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js
+微信小程序 活动抽奖 = type=cron,cronexp="40 2 0 * * *",script-path=JS/WeChatLottery_new.js
 
 # > 什么值得买
 什么值得买 = type=cron,cronexp="0 2 0 * * *",script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js
