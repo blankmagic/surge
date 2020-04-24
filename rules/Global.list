@@ -591,3 +591,15 @@ DOMAIN-SUFFIX,x-art.com
 DOMAIN-SUFFIX,yimg.com
 DOMAIN,api.steampowered.com
 DOMAIN,store.steampowered.com
+
+# > FINAL
+AND,((IP-CIDR,0.0.0.0/0,no-resolve), (NOT,((GEOIP,CN))))
+AND,((IP-CIDR6,::/0,no-resolve), (NOT,((GEOIP,CN))))
+
+# > User-Agent
+AND,((USER-AGENT,JSBox*), (NOT,((GEOIP,CN))))
+AND,((USER-AGENT,Reeder*), (NOT,((GEOIP,CN))))
+
+AND,((USER-AGENT,Mozilla*), (NOT,((GEOIP,CN))))
+AND,((USER-AGENT,*Safari*), (NOT,((GEOIP,CN))))
+AND,((USER-AGENT,*Networking*), (NOT,((GEOIP,CN))))
