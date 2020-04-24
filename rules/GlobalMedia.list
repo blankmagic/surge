@@ -1,5 +1,4 @@
-# (GlobalMedia)
-# (Music)
+# GlobalMedia-Music
 # > Deezer
 USER-AGENT,Deezer*
 DOMAIN-SUFFIX,deezer.com
@@ -34,7 +33,8 @@ DOMAIN-SUFFIX,tidal.com
 # > YouTubeMusic
 USER-AGENT,com.google.ios.youtubemusic*
 USER-AGENT,YouTubeMusic*
-# (Video)
+
+# GlobalMedia-Video
 # > All4
 USER-AGENT,All4*
 DOMAIN-SUFFIX,c4assets.com
@@ -118,7 +118,7 @@ DOMAIN,hboasia3-i.akamaihd.net
 DOMAIN,hboasia4-i.akamaihd.net
 DOMAIN,hboasia5-i.akamaihd.net
 DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net
-# > 华文电视
+# > 5iTV
 USER-AGENT,HWTVMobile*
 DOMAIN-SUFFIX,5itv.tv
 DOMAIN-SUFFIX,ocnttv.com

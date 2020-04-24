@@ -1,0 +1,31 @@
+#!name=Local Area Network
+#!desc=本地局域网跟路由器管理域。
+
+[Rule]
+# 本地/局域网地址
+# 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
+DOMAIN-SUFFIX,ip6-localhost,DIRECT
+DOMAIN-SUFFIX,local,DIRECT
+DOMAIN-SUFFIX,localhost,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+IP-CIDR6,::1/128,DIRECT,no-resolve
+IP-CIDR6,fc00::/7,DIRECT,no-resolve
+IP-CIDR6,fe80::/10,DIRECT,no-resolve
+IP-CIDR6,fd00::/8,DIRECT,no-resolve
+
+# Router managed 路由器管理域名
+DOMAIN,router.asus.com,DIRECT
+DOMAIN-SUFFIX,hiwifi.com,DIRECT
+DOMAIN-SUFFIX,leike.cc,DIRECT
+DOMAIN-SUFFIX,miwifi.com,DIRECT
+DOMAIN-SUFFIX,my.router,DIRECT
+DOMAIN-SUFFIX,p.to,DIRECT
+DOMAIN-SUFFIX,peiluyou.com,DIRECT
+DOMAIN-SUFFIX,phicomm.me,DIRECT
+DOMAIN-SUFFIX,routerlogin.com,DIRECT
+DOMAIN-SUFFIX,tendawifi.com,DIRECT
+DOMAIN-SUFFIX,zte.home,DIRECT
