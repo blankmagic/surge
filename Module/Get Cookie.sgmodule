@@ -10,6 +10,7 @@ hostname = %APPEND% www.flyertea.com, wapside.189.cn:9001, www.smzdm.com, music.
 Flyertea = type=http-request,pattern=^https:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?module=getdata&.*,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.cookie.js
 
 # > 中国电信
+# 打开电信营业厅 APP>我的>签到成功一次以获取 Cookie
 10000 = type=http-request,pattern=^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js
 10000 = type=http-response,pattern=^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js
 
