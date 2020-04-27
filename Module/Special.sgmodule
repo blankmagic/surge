@@ -1,0 +1,46 @@
+#!name=Special
+#!desc=未来特殊规则修正
+
+[Rule]
+# Special
+# > General
+USER-AGENT,coffeecorp*,DIRECT
+USER-AGENT,restaurant-mobile*,DIRECT
+DOMAIN,app.adjust.com,DIRECT
+# > Google
+DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
+DOMAIN,dl.google.com,DIRECT
+DOMAIN,mtalk.google.com,DIRECT
+# > Tencent
+DOMAIN,livew.l.qq.com,DIRECT
+DOMAIN,vd.l.qq.com,DIRECT
+# > Strava
+DOMAIN,analytics.strava.com,DIRECT
+# > Umeng
+DOMAIN,msg.umeng.com,DIRECT
+DOMAIN,msg.umengcloud.com,DIRECT
+
+# > Download
+PROCESS-NAME,aria2c,DIRECT
+PROCESS-NAME,fdm,DIRECT
+PROCESS-NAME,Folx,DIRECT
+PROCESS-NAME,NetTransport,DIRECT
+PROCESS-NAME,Thunder,DIRECT
+PROCESS-NAME,Transmission,DIRECT
+PROCESS-NAME,uTorrent,DIRECT
+PROCESS-NAME,WebTorrent,DIRECT
+PROCESS-NAME,WebTorrent Helper,DIRECT
+# > bt
+DOMAIN-KEYWORD,announce,DIRECT
+DOMAIN-KEYWORD,torrent,DIRECT
+DOMAIN-KEYWORD,tracker,DIRECT
+DOMAIN-SUFFIX,smtp,DIRECT
+DOMAIN-KEYWORD,aria2,DIRECT
+URL-REGEX,(Subject|HELO|SMTP),DIRECT
+# > 迅雷
+URL-REGEX,(.?)(xunlei|sandai|Thunder|XLLiveUD)(.),DIRECT
+DOMAIN-SUFFIX,xunlei.com,DIRECT
+# > 360
+URL-REGEX,(.+\.|^)(360|so)\.(cn|com),DIRECT
+# > 百度
+URL-REGEX,(api|ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map|)\.(baidu|n\.shifen)\.com,DIRECT
