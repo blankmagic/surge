@@ -4257,7 +4257,6 @@
 .apollofind.com
 .apologixopyr.site
 .apopgo.com
-.app-measurement.com
 .prism.app-us1.com
 .sp.app.com
 .sdk.appadhoc.com
