@@ -20,7 +20,7 @@ DOMAIN,analytics.strava.com,DIRECT
 DOMAIN,msg.umeng.com,DIRECT
 DOMAIN,msg.umengcloud.com,DIRECT
 
-# > Download
+# > Download For Surge Mac
 PROCESS-NAME,aria2c,DIRECT
 PROCESS-NAME,fdm,DIRECT
 PROCESS-NAME,Folx,DIRECT
