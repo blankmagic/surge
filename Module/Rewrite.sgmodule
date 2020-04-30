@@ -65,6 +65,9 @@ hostname = %APPEND% *.amemv.com, *.iydsj.com, *.k.sohu.com, *.tv.sohu.com, *.kak
 ^https?:\/\/(www.)?yuanchengxiezuo\.com\/ https://www.teamviewer.com/ 302
 ^https?:\/\/(www.)?zbrushcn.com/ https://pixologic.com/ 302
 
+# Remove Super's Ad (By Liquor030)
+app_name=super&([\S]*)aid=\d+ app_name=super_pro&$1aid=1412 header
+
 # Wikipedia
 ^https://zh.(m.)?wikipedia.org/zh(-\w*)?(?=/) https://www.wikiwand.com/zh$2 302
 ^https://(\w*).(m.)?wikipedia.org/wiki https://www.wikiwand.com/$1 302
@@ -563,6 +566,16 @@ hostname = %APPEND% *.amemv.com, *.iydsj.com, *.k.sohu.com, *.tv.sohu.com, *.kak
 ^https?:\/\/ih2\.ireader\.com\/zycl\/api\/ad\/ - reject
 
 [Header Rewrite]
-^*.qpic.cn header-replace User-Agent "WeChat/6.5.22.32 CFNetwork/889.9 Darwin/17.2.0"
+# > 腾讯
+^*.qpic.cn header-replace User-Agent WeChat/6.5.22.32 CFNetwork/889.9 Darwin/17.2.0
+^*.qpic.cn header-del Referer
+# > 网易
+^*.ph.126.net header-del Referer
+# > 知乎
+^*.zhimg.com header-del Referer
 ^https?+:\/\/www\.zhihu\.com\/question header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15"
+# > 中文业界资讯站
+^*.cnbetacdn.com header-del Referer
+# > 百度
+^*.bdimg.com header-del Referer
 ^https?://zhidao\.baidu\.com header-replace User-Agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15
