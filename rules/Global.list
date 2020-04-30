@@ -609,8 +609,8 @@ DOMAIN,api.steampowered.com
 DOMAIN,store.steampowered.com
 
 # > FINAL
-AND,((IP-CIDR,0.0.0.0/0,no-resolve), (NOT,((GEOIP,CN))))
-AND,((IP-CIDR6,::/0,no-resolve), (NOT,((GEOIP,CN))))
+#AND,((IP-CIDR,0.0.0.0/0,no-resolve), (NOT,((GEOIP,CN))))
+#AND,((IP-CIDR6,::/0,no-resolve), (NOT,((GEOIP,CN))))
 
 # > User-Agent
 AND,((USER-AGENT,JSBox*), (NOT,((GEOIP,CN))))
