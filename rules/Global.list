@@ -79,6 +79,11 @@ DOMAIN-SUFFIX,reddit.com
 DOMAIN-SUFFIX,redditmedia.com
 DOMAIN-SUFFIX,redditlist.com
 DOMAIN-SUFFIX,redditstatic.com
+# > TikTok
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,akamaized.net
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,musical.ly
 # > Twitter
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,periscope.tv
@@ -605,6 +610,7 @@ DOMAIN-SUFFIX,wn.com
 DOMAIN-SUFFIX,wolframalpha.com
 DOMAIN-SUFFIX,x-art.com
 DOMAIN-SUFFIX,yimg.com
+DOMAIN-SUFFIX,protonmail.com
 DOMAIN,api.steampowered.com
 DOMAIN,store.steampowered.com
 
