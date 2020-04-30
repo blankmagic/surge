@@ -6,6 +6,7 @@
 testflight.apple.com = script:Dnspod
 ip6-localhost = ::1
 ip6-loopback = ::1
+*.google.com = script:Dnspod
 *.itunes.apple.com = script:Dnspod
 *.taobao.com = server:223.5.5.5
 *.tmall.com = server:223.5.5.5
