@@ -5,7 +5,7 @@
 
 > 不是所有广告都能简单的依靠规则阻止！
 
-### *简介*
+## *简介*
 本项目基于 [ConnersHua](https://github.com/ConnersHua) 修改而来，时间精力有限，尽量看教程少提问！
 
 ~***完整教程 [新手启蒙](https://diaosi.one/2020/surge-basic-tutorial)***~
