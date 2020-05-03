@@ -3,4 +3,4 @@
 
 [Script]
 
-App 价格监控 = type=cron,cronexp=0 * * * *,script-path=JS/Appmonitor.js
+App 价格监控 = type=cron,cronexp=3 0 0-23/1 * * *,script-path=JS/Appmonitor.js
