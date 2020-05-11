@@ -1,8 +1,8 @@
-#!name=HTTP JS
+#!name=HTTP Script
 #!desc=修改 HTTP 请求或响应类脚本，值字段是一个正则表达式，用于匹配请求。
 
 [MITM]
-hostname = %APPEND% api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, *.amemv.com, *.musical.ly, ios.prod.ftl.netflix.com, api.zhihu.com, r.inews.qq.com, i.weread.qq.com, mp.weixin.qq.com, api.m.jd.com, trade-acs.m.taobao.com, api.gamer.com.tw, account.wps.cn, ap*.intsig.net, api.gotokeep.com, vip1.kuwo.cn, www.luqijianggushi.com, p.du.163.com, sp.kaola.com, vsco.co, api.faceapp.io, api.picsart.c*, api.meiease.c*, photos.adobe.io, buy.itunes.apple.com, viva.v21xy.com, api.vuevideo.net, splice.oracle.*.com, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, book.haitunwallet.com, note.youdao.com, api.termius.com, pan.baidu.com, api.interpreter.caiyunai.com, biz.caiyunapp.com, u.kanghuayun.com, *.xiaoxiao*.com, api.rr.tv, api.mvmtv.com, api.diyidan.net, m.pearkin.com
+hostname = %APPEND% api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, *.amemv.com, *.musical.ly, ios.prod.ftl.netflix.com, api.zhihu.com, r.inews.qq.com, i.weread.qq.com, mp.weixin.qq.com, api.m.jd.com, trade-acs.m.taobao.com, api.gamer.com.tw, account.wps.cn, ap*.intsig.net, api.gotokeep.com, vip1.kuwo.cn, www.luqijianggushi.com, p.du.163.com, sp.kaola.com, vsco.co, api.faceapp.io, api.picsart.c*, api.meiease.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, viva.v21xy.com, api.vuevideo.net, splice.oracle.*.com, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, book.haitunwallet.com, note.youdao.com, api.termius.com, pan.baidu.com, api.interpreter.caiyunai.com, biz.caiyunapp.com, u.kanghuayun.com, *.xiaoxiao*.com, api.rr.tv, api.mvmtv.com, api.diyidan.net, m.pearkin.com
 
 [Script]
 # Remove Ads + Unlock Premium.
@@ -76,10 +76,13 @@ FaceApp = type=http-response,pattern=^https?:\/\/api\.faceapp\.io(.*)\/api\/v.*\
 PicsArt = type=http-response,pattern=https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js,script-update-interval=0
 
 # > Lightroom
-Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts*,requires-body=1,max-size=0,script-path=https://sub.jiaowoy.top/js/Lightroom.js,script-update-interval=0
+Adobe Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/maicoo-l/Surge/master/Script/Lightroom.js,script-update-interval=0
+
+# > Photoshop Express
+Ps Express = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/maicoo-l/Surge/master/Script/Ps%20Express.js,script-update-interval=0
 
 # > InShot
-InShot = type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,requires-body=1,max-size=0,script-path=JS/inshot.js,script-update-interval=0
+InShot = type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,requires-body=1,max-size=0,script-path=JS/inshot.js
 
 # > 小影
 VivaVideo = type=http-response,pattern=^https:\/\/viva\.v21xy\.com\/api\/rest\/u\/vip,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js,script-update-interval=0
@@ -91,10 +94,10 @@ VUE = type=http-response,pattern=https:\/\/api\.vuevideo\.net\/api\/v1\/(users\/
 Splice = type=http-response,pattern=https:\/\/splice\.oracle\.\w+\.com\/devices\/me,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Splice.js,script-update-interval=0
 
 # > 轻颜相机
-轻颜相机 = type=http-response,pattern=^https:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info,requires-body=1,max-size=0,script-path=JS/qyxj.js,script-update-interval=0
+轻颜相机 = type=http-response,pattern=^https:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info,requires-body=1,max-size=0,script-path=JS/qyxj.js
 
 # > Haitun wallet unlock vip
-海豚记账本🐬 = type=http-response,pattern=https:\/\/book\.haitunwallet\.com\/app\/vip\/status,requires-body=1,max-size=0,script-path=JS/HTJZ.js,script-update-interval=0
+海豚记账本🐬 = type=http-response,pattern=https:\/\/book\.haitunwallet\.com\/app\/vip\/status,requires-body=1,max-size=0,script-path=JS/HTJZ.js
 
 # > Youdao note unlock vip (By Alex0510)
 Youdao Note = type=http-response,pattern=https://note.youdao.com/yws/(mapi/payment|api/self),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/ydybj.js,script-update-interval=0
@@ -106,17 +109,17 @@ Termius = type=http-response,pattern=https:\/\/api\.termius\.com\/api\/v3\/bulk\
 Baidu Cloud = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js,script-update-interval=0
 
 # > 彩云小译
-彩云小译 = type=http-response,pattern=^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user,requires-body=1,max-size=0,script-path=JS/caiyunai.js,script-update-interval=0
+彩云小译 = type=http-response,pattern=^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user,requires-body=1,max-size=0,script-path=JS/caiyunai.js
 
 # > 彩云天气 (By Alex0510)
-彩云天气 = type=http-response,pattern=https://biz.caiyunapp.com/v2/user\?app_name=weather,requires-body=1,max-size=0,script-path=JS/caiyun.js,script-update-interval=0
+彩云天气 = type=http-response,pattern=https://biz.caiyunapp.com/v2/user\?app_name=weather,requires-body=1,max-size=0,script-path=JS/caiyun.js
 
 # > 万象直播
 万象直播 = type=http-response,pattern=https:\/\/u\.kanghuayun\.com\/api\/v2\/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/wxzb.js,script-update-interval=0
 
 # > 小小影视 Unlock vip
 小小影视 = type=http-response,pattern=https:\/\/ios\.xiaoxiaoapps\.com\/(vod\/reqplay\/|ucp/index|getGlobalData),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xxys.js,script-update-interval=0
-,
+
 # > rrTV (by george Jiang)
 rrTV = type=http-response,pattern=^https?:\/\/api\.rr\.tv(\/user\/profile|\/ad\/getAll),script-path=https://raw.githubusercontent.com/popeyelau/Surge/master/rrtv.js,script-update-interval=0,script-update-interval=0
 
