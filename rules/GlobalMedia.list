@@ -39,6 +39,10 @@ USER-AGENT,YouTubeMusic*
 USER-AGENT,All4*
 DOMAIN-SUFFIX,c4assets.com
 DOMAIN-SUFFIX,channel4.com
+# > AppleTV
+DOMAIN,np-edge.itunes.apple.com
+DOMAIN,play-edge.itunes.apple.com
+DOMAIN-SUFFIX,tv.apple.com
 # > AbemaTV
 USER-AGENT,AbemaTV*
 DOMAIN-SUFFIX,abema.io
@@ -100,8 +104,13 @@ DOMAIN-SUFFIX,theplatform.com
 DOMAIN-SUFFIX,uplynk.com
 # > HBO NOW
 USER-AGENT,HBO%20NOW*
+DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com
 DOMAIN-SUFFIX,hbo.com
+DOMAIN-SUFFIX,hboasia.com
 DOMAIN-SUFFIX,hbogo.com
+DOMAIN-SUFFIX,hbogoasia.com
+DOMAIN-SUFFIX,hbogoasia.hk
+DOMAIN-SUFFIX,hbomax.com
 DOMAIN-SUFFIX,hbonow.com
 # > HBO GO HKG
 USER-AGENT,HBO%20GO%20PROD%20HKG*
@@ -142,8 +151,11 @@ DOMAIN-SUFFIX,kktv.me
 DOMAIN,kktv-theater.kk.stream
 # > Line TV
 USER-AGENT,LINE%20TV*
+USER-AGENT,LINE*
 DOMAIN-SUFFIX,linetv.tw
 DOMAIN,d3c7rimkq79yfu.cloudfront.net
+DOMAIN-SUFFIX,d3c7rimkq79yfu.cloudfront.net
+DOMAIN-SUFFIX,linetv.tw
 # > LiTV
 DOMAIN-SUFFIX,litv.tv
 DOMAIN,litvfreemobile-hichannel.cdn.hinet.net
@@ -198,6 +210,12 @@ DOMAIN-SUFFIX,pbs.org
 DOMAIN-SUFFIX,phncdn.com
 DOMAIN-SUFFIX,pornhub.com
 DOMAIN-SUFFIX,pornhubpremium.com
+# > TikTok
+USER-AGENT,TikTok*
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,akamaized.net
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,musical.ly
 # > 台湾好
 USER-AGENT,TaiwanGood*
 DOMAIN-SUFFIX,skyking.com.tw
