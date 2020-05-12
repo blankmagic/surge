@@ -137,13 +137,13 @@ DOMAIN,mopnativeadv.037201.com,REJECT
 DOMAIN,nativeadv.dftoutiao.com,REJECT
 
 # > 58
-DOMAIN-SUFFIX,58.xgo.com.cn
-DOMAIN-SUFFIX,brandshow.58.com
-DOMAIN-SUFFIX,imp.xgo.com.cn
-DOMAIN-SUFFIX,jing.58.com
-DOMAIN-SUFFIX,stat.xgo.com.cn
-DOMAIN-SUFFIX,track.58.com
-DOMAIN-SUFFIX,tracklog.58.com
+DOMAIN-SUFFIX,58.xgo.com.cn,REJECT
+DOMAIN-SUFFIX,brandshow.58.com,REJECT
+DOMAIN-SUFFIX,imp.xgo.com.cn,REJECT
+DOMAIN-SUFFIX,jing.58.com,REJECT
+DOMAIN-SUFFIX,stat.xgo.com.cn,REJECT
+DOMAIN-SUFFIX,track.58.com,REJECT
+DOMAIN-SUFFIX,tracklog.58.com,REJECT
 # > Apple
 DOMAIN-SUFFIX,iadsdk.apple.com,REJECT
 DOMAIN-SUFFIX,ads.internal.unity3d.com,REJECT
