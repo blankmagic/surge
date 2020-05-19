@@ -1463,6 +1463,3 @@ zc.adpush.cn = 127.0.0.1
 z.domob.cn = 127.0.0.1
 z.sora.yoyi.com.cn = 127.0.0.1
 zt.adsage.com = 127.0.0.1
-
-[Script]
-Dnspod = type=dns,script-path=https://raw.githubusercontent.com/maicoo-l/Surge/master/Script/dnspod.js
