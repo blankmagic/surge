@@ -2,7 +2,7 @@
 #!desc=修改 HTTP 请求或响应类脚本，值字段是一个正则表达式，用于匹配请求。
 
 [MITM]
-hostname = %APPEND% api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, *.amemv.com, *.musical.ly, ios.prod.ftl.netflix.com, api.zhihu.com, r.inews.qq.com, i.weread.qq.com, mp.weixin.qq.com, api.m.jd.com, trade-acs.m.taobao.com, api.gamer.com.tw, account.wps.cn, ap*.intsig.net, api.gotokeep.com, vip1.kuwo.cn, www.luqijianggushi.com, p.du.163.com, sp.kaola.com, vsco.co, api.faceapp.io, api.picsart.c*, api.meiease.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, viva.v21xy.com, api.vuevideo.net, splice.oracle.*.com, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, book.haitunwallet.com, note.youdao.com, api.termius.com, pan.baidu.com, api.interpreter.caiyunai.com, biz.caiyunapp.com, u.kanghuayun.com, api.rr.tv, api.mvmtv.com, api.diyidan.net, m.pearkin.com
+hostname = %APPEND% api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, *.amemv.com, *.musical.ly, ios.prod.ftl.netflix.com, api.zhihu.com, r.inews.qq.com, mp.weixin.qq.com, api.m.jd.com, trade-acs.m.taobao.com, api.gamer.com.tw, account.wps.cn, ap*.intsig.net, vip1.kuwo.cn, www.luqijianggushi.com, p.du.163.com, vsco.co, api.picsart.c*, api.meiease.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, viva.v21xy.com, api.vuevideo.net, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, book.haitunwallet.com, note.youdao.com, pan.baidu.com, api.interpreter.caiyunai.com, biz.caiyunapp.com, u.kanghuayun.com, api.rr.tv, api.mvmtv.com, api.diyidan.net, m.pearkin.com
 
 [Script]
 # Remove Ads + Unlock Premium.
@@ -27,9 +27,6 @@ Zhihu = type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/(moments\?|topst
 # > QQ News
 QQ News = type=http-response,pattern=https://r\.inews\.qq.com\/get(QQNewsUnreadList|RecommendList),requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/QQNews.js,script-update-interval=0
 
-# > 微信阅读 （By HoGer）
-Weixin Read = type=http-response,pattern=^https?:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/imxh/js/master/weixinyuedu.js,script-update-interval=0
-
 # > 微信公众号 (By Choler)
 WeChat = type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad,script-path=https://Choler.github.io/Surge/Script/WeChat.js,script-update-interval=0
 
@@ -50,9 +47,6 @@ WPS = type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\/users,requir
 # > CamScanner unlocks pro, Cloud scanning is not available.
 CamScanner = type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js,script-update-interval=0
 
-# > Keep app unlock private lessons and action libraries.
-Keep = type=http-response,pattern=https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Keep.js,script-update-interval=0
-
 # > KuWo music unlock vip
 KuWo Music = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js,script-update-interval=0
 KuWo Music = type=hhttp-request,pattern=^https?:\/\/musicpay\.kuwo.cn\/music\.pay\?uid=\d+,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/KuWoMusicDownload.js,script-update-interval=0
@@ -63,14 +57,8 @@ Luqi Say Story = type=http-response,pattern=https:\/\/www\.luqijianggushi\.com\/
 # > Netease snail reading unlock vip
 Netease Rnail Reading = type=http-response,pattern=^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js,script-update-interval=0
 
-# > Netease Kaola removes ads
-考拉 = type=http-response,pattern=^https://sp\.kaola\.com/api/openad$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wykaola.js,script-update-interval=0
-
 # > VSCO
 VSCO = type=http-response,pattern=^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js,script-update-interval=0
-
-# > FaceAPP
-FaceApp = type=http-response,pattern=^https?:\/\/api\.faceapp\.io(.*)\/api\/v.*\/auth\/user\/credentials,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/FaceApp.js,script-update-interval=0
 
 # > PicsArt
 PicsArt = type=http-response,pattern=https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js,script-update-interval=0
@@ -90,9 +78,6 @@ VivaVideo = type=http-response,pattern=^https:\/\/viva\.v21xy\.com\/api\/rest\/u
 # > VUE video
 VUE = type=http-response,pattern=https:\/\/api\.vuevideo\.net\/api\/v1\/(users\/.+\/profile|subtitle\/prepare),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/VUE.js,script-update-interval=0
 
-# > Splice
-Splice = type=http-response,pattern=https:\/\/splice\.oracle\.\w+\.com\/devices\/me,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Splice.js,script-update-interval=0
-
 # > 轻颜相机
 轻颜相机 = type=http-response,pattern=^https:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info,requires-body=1,max-size=0,script-path=JS/qyxj.js
 
@@ -101,9 +86,6 @@ Splice = type=http-response,pattern=https:\/\/splice\.oracle\.\w+\.com\/devices\
 
 # > Youdao note unlock vip (By Alex0510)
 Youdao Note = type=http-response,pattern=https://note.youdao.com/yws/(mapi/payment|api/self),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/ydybj.js,script-update-interval=0
-
-# > Termius
-Termius = type=http-response,pattern=https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Termius.js,script-update-interval=0
 
 # > Baidu netdisc unlocks online video play speed.
 Baidu Cloud = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js,script-update-interval=0
