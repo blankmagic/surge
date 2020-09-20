@@ -2,7 +2,7 @@
 #!desc=修改 HTTP 请求或响应类脚本，值字段是一个正则表达式，用于匹配请求。
 
 [MITM]
-hostname = %APPEND% api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, *.amemv.com, *.musical.ly, ios.prod.ftl.netflix.com, api.zhihu.com, r.inews.qq.com, mp.weixin.qq.com, api.m.jd.com, trade-acs.m.taobao.com, api.gamer.com.tw, account.wps.cn, ap*.intsig.net, vip1.kuwo.cn, www.luqijianggushi.com, p.du.163.com, vsco.co, api.picsart.c*, api.meiease.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, viva.v21xy.com, api.vuevideo.net, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, book.haitunwallet.com, note.youdao.com, pan.baidu.com, api.interpreter.caiyunai.com, biz.caiyunapp.com, u.kanghuayun.com, api.rr.tv, api.mvmtv.com, api.diyidan.net, m.pearkin.com
+hostname = %APPEND% api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, *.amemv.com, *.musical.ly, ios.prod.ftl.netflix.com, api.zhihu.com, r.inews.qq.com, mp.weixin.qq.com, api.m.jd.com, trade-acs.m.taobao.com, api.gamer.com.tw, account.wps.cn, ap*.intsig.net, vip1.kuwo.cn, www.luqijianggushi.com, p.du.163.com, vsco.co, api.picsart.c*, api.meiease.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, api.vuevideo.net, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, book.haitunwallet.com, note.youdao.com, pan.baidu.com, api.interpreter.caiyunai.com, api.rr.tv, api.mvmtv.com, m.pearkin.com
 
 [Script]
 # Remove Ads + Unlock Premium.
@@ -72,9 +72,6 @@ Ps Express = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/m
 # > InShot
 InShot = type=http-response,pattern=https://buy.itunes.apple.com/verifyReceipt,requires-body=1,max-size=0,script-path=JS/inshot.js
 
-# > 小影
-VivaVideo = type=http-response,pattern=^https:\/\/viva\.v21xy\.com\/api\/rest\/u\/vip,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js,script-update-interval=0
-
 # > VUE video
 VUE = type=http-response,pattern=https:\/\/api\.vuevideo\.net\/api\/v1\/(users\/.+\/profile|subtitle\/prepare),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/VUE.js,script-update-interval=0
 
@@ -93,17 +90,8 @@ Baidu Cloud = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/
 # > 彩云小译
 彩云小译 = type=http-response,pattern=^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user,requires-body=1,max-size=0,script-path=JS/caiyunai.js
 
-# > 彩云天气 (By Alex0510)
-彩云天气 = type=http-response,pattern=https://biz.caiyunapp.com/v2/user\?app_name=weather,requires-body=1,max-size=0,script-path=JS/caiyun.js
-
-# > 万象直播
-万象直播 = type=http-response,pattern=https:\/\/u\.kanghuayun\.com\/api\/v2\/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/wxzb.js,script-update-interval=0
-
 # > rrTV (by george Jiang)
 rrTV = type=http-response,pattern=^https?:\/\/api\.rr\.tv(\/user\/profile|\/ad\/getAll),script-path=https://raw.githubusercontent.com/popeyelau/Surge/master/rrtv.js,script-update-interval=0,script-update-interval=0
-
-# > 第一弹 (By Miao Miao)
-第一弹 = type=http-response,pattern=^https:\/\/api\.diyidan\.net\/v0\.3\/(user\/personal_homepage|vip_user\/info|tv_series\/index\?appChanne),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/Diyidan.js,script-update-interval=0
 
 # > 91 short video Unlock vip
 # app download link : http://i91.porn
