@@ -1,10 +1,3 @@
-# Surge Rule
-
-
-> 规则不是万能的
-
-> 不是所有广告都能简单的依靠规则阻止！
-
 ## *简介*
 本项目基于 [ConnersHua](https://github.com/ConnersHua) 修改而来，时间精力有限，尽量看教程少提问！
 
