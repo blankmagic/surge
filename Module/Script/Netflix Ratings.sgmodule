@@ -1,9 +1,0 @@
-#!name=Netflix IMDb
-#!desc=Display netflix ratings（IMDb、douaban）.
-
-[Script]
-Netflix IMDb Ratings = script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
-Netflix IMDb Ratings = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
-
-[MITM]
-hostname = %APPEND% ios.prod.ftl.netflix.com
