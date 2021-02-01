@@ -1,21 +1,14 @@
-/* 
-event network-changed by Tempoblink
-version: 2.1
-auther: tempoblink
-[Script]
-Outbound Mode = type=event,event-name=network-changed,debug=1,script-path=JS/Network-changed.js
-
-PS:记得自己修改WIFI名称 "home_ssid1or2" 
-主要功能:指定Wi-Fi下,Surge自动化不同出站模式,三个值可选'Direct' or 'Rule' or 'Global-Proxy' 
-*/
+//Outbound-Mode = type=event,event-name=network-changed,script-path=JS/Network-changed.js
+//version: 2.1
+//auther: tempoblink
 
 //The Notification Format.
 //You can change the notification by yourself.
-let TITLE = '网络状态变更';
-let SUBTITLE_CELLULAR = '蜂窝网, ';
+let TITLE = 'Outbound Changed!';
+let SUBTITLE_CELLULAR = 'Cellular, ';
 let SUBTITLE_WIFI = 'Wi-Fi, ';
-let ABOUT_MODE = '出站模式 ';
-let ABOUT_TIME = '加入网络 ';
+let ABOUT_MODE = 'Outbound mode: ';
+let ABOUT_TIME = 'Start Network: ';
 let FORMAT_TIME = "yyyy-MM-dd hh:mm:ss";
 
 //white ssid and black ssid ob rule.
