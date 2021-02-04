@@ -1,4 +1,4 @@
-⚠️ > For pure self-use
+⚠️For pure self-use
 
 _________________
 
