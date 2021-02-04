@@ -1,7 +1,12 @@
 ⚠️For pure self-use
 
-_________________
+[Telegram Channel](https://t.me/Surge_classroom)
 
-## [Follow-up teaching](https://t.me/Surge_classroom)
+Thank
 
-It can be copied and forwarded, but original author information must be provided, and the project cannot be used for commercial purposes.
+* item [DivineEngine/Profiles/surge](https://github.com/DivineEngine/Profiles/tree/master/Surge)
+* item [Yichahucha/surge](https://github.com/yichahucha/surge/tree/master)
+* item [chavyleung/scripts](https://github.com/chavyleung/scripts)
+* item [langkhach/Surge](https://github.com/langkhach270389/Scripting/tree/master/Surge)
+* item [NobyDa/Script](https://github.com/NobyDa/Script/tree/master)
+* item [Choler/Surge](https://github.com/Choler/Surge)
