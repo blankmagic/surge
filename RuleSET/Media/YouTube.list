@@ -1,4 +1,4 @@
-# > YouTube
+# YouTube
 USER-AGENT,com.google.ios.youtube*
 USER-AGENT,YouTube*
 DOMAIN-SUFFIX,googlevideo.com
