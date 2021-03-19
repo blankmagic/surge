@@ -1,4 +1,4 @@
-# Bilibili
+# bilibili
 USER-AGENT,bili*
 USER-AGENT,Bilibili*
 DOMAIN-SUFFIX,acg.tv
