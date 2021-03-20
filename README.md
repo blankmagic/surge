@@ -1,5 +1,6 @@
 ⚠️***For pure self-use***
 
+Please read the [Documentation](https://www.notion.so/maicoo/Surge-bf22101efe66497582ea937ddc750246) before using this Configuration.
 [Telegram Channel](https://t.me/Surge_classroom)
 
 ---
@@ -13,6 +14,7 @@
 *Special thanks*
 
 * [ConnersHua/surge](https://github.com/DivineEngine/Profiles/tree/master/Surge)
+* [Peng-YM/Sub-Store](https://github.com/Peng-YM/Sub-Store/tree/master/config)
 * [LāngKhách/Surge](https://github.com/langkhach270389/Scripting/tree/master/Surge)
 * [NobyDa/Script](https://github.com/NobyDa/Script/tree/master)
 * [Choler/Surge](https://github.com/Choler/Surge)
