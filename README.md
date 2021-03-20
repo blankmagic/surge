@@ -1,6 +1,7 @@
 ⚠️***For pure self-use***
 
 Please read the [Documentation](https://www.notion.so/maicoo/Surge-bf22101efe66497582ea937ddc750246) before using this Configuration.
+
 [Telegram Channel](https://t.me/Surge_classroom)
 
 ---
