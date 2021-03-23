@@ -1,5 +1,4 @@
 # Telegram
-# Telegram 的主分流文件 Telegram.list 已收录于 Global.list 中，如无确切目的不需要额外添加。
 DOMAIN-SUFFIX,t.me
 DOMAIN-SUFFIX,tdesktop.com
 DOMAIN-SUFFIX,telegra.ph

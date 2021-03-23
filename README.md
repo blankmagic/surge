@@ -16,7 +16,7 @@ Please read the [Documentation](https://www.notion.so/maicoo/Surge-bf22101efe664
 
 * [ConnersHua/surge](https://github.com/DivineEngine/Profiles/tree/master/Surge)
 * [Peng-YM/Sub-Store](https://github.com/Peng-YM/Sub-Store/tree/master/config)
-* [LāngKhách/Surge](https://github.com/langkhach270389/Scripting/tree/master/Surge)
+* [Lãng Khách/Surge](https://github.com/langkhach270389/Scripting/tree/master/Surge)
 * [NobyDa/Script](https://github.com/NobyDa/Script/tree/master)
 * [Choler/Surge](https://github.com/Choler/Surge)
 * [Yichahucha/surge](https://github.com/yichahucha/surge/tree/master)
