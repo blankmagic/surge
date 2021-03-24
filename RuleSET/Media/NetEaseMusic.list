@@ -1,6 +1,5 @@
 # NetEase Cloud Music
 USER-AGENT,NeteaseMusic*
-USER-AGENT,NeteaseMusic**
 DOMAIN,netease.ugcvideoss.ourdvs.com
 DOMAIN-SUFFIX,163yun.com
 DOMAIN-SUFFIX,api.iplay.163.com
@@ -29,4 +28,3 @@ IP-CIDR,47.100.127.239/32,no-resolve
 IP-CIDR,59.111.128.0/17,no-resolve
 IP-CIDR,59.111.21.14/31,no-resolve
 USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*
-USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90**
