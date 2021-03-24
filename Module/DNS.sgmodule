@@ -1,26 +1,21 @@
 #!name=DNS
-#!desc=本地 DNS 映射
+#!desc=Override system DNS settings and add local DNS mapping records.
 
 [Host]
-*.nextdns.io = server:8.8.8.8
-ip6-localhost = ::1
-ip6-loopback = ::1
+# Redirect Current Network
+router.com = router
+
 *.taobao.com = server:223.5.5.5
-*.tmall.com = server:223.5.5.5
-*.jd.com = server:119.28.28.28
-*.qq.com = server:119.28.28.28
-*.tencent.com = server:119.28.28.28
-*.alicdn.com = server:223.5.5.5
+*.jd.com = server:223.5.5.5
 *.aliyun.com = server:223.5.5.5
-*.weixin.com = server:119.28.28.28
-*.163.com = server:119.29.29.29
-*.126.com = server:119.29.29.29
-*.126.net = server:119.29.29.29
-*.127.net = server:119.29.29.29
-*.netease.com = server:119.29.29.29
-*.mi.com = server:119.29.29.29
-*.xiaomi.com = server:119.29.29.29
-*.bilibili.com = server:119.29.29.29
-cdn.pcbeta.attachment.inimc.com = 120.52.19.113
-cdn.pcbeta.css.inimc.com = 120.52.19.113
-cdn.pcbeta.static.inimc.com = 120.52.19.113
+*.alicdn.com = server:223.5.5.5
+*.qq.com = server:119.29.29.29
+*.weixin.com = server:119.29.29.29
+owner-api.vn.tesla.services = server:223.5.5.5
+in.appcenter.ms = script:Dnspod
+
+# Firebase Cloud Messaging
+mtalk.google.com = 108.177.125.188
+# Google Dl
+dl.google.com = server:119.29.29.29
+dl.l.google.com = server:119.29.29.29
