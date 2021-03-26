@@ -1,6 +1,7 @@
 #!name=YouTube
-#!desc=YouTube videos removes ads, Don't use Premium.
-#!system=ios
+#!desc=Skip YouTube video ads
+
+# Don't use Premium
 
 [Rule]
 URL-REGEX,https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost,REJECT
@@ -19,8 +20,6 @@ URL-REGEX,https?:\/\/[\w-]+\.googlevideo\.com\/.+&oad,REJECT-TINYGIF
 
 [URL Rewrite]
 ctier=[A-Z] citer=A 302
-(^https?:\/\/[\w-]+\.googlevideo\.com\/.+)(ctier=L)(&.+) $1$3 302
-^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier) - reject
 
 [Script]
 http-request https?:\/\/.+?\.googlevideo\.com\/.+&(oad|ctier)=(?!A),script-path=https://choler.github.io/Surge/Script/YouTube.js
