@@ -1,0 +1,21 @@
+#!name=DNS
+#!desc=Override system DNS settings and add local DNS mapping records.
+
+[Host]
+# Redirect Current Network
+router.com = router
+
+*.taobao.com = server:223.5.5.5
+*.jd.com = server:223.5.5.5
+*.aliyun.com = server:223.5.5.5
+*.alicdn.com = server:223.5.5.5
+*.qq.com = server:119.29.29.29
+*.weixin.com = server:119.29.29.29
+owner-api.vn.tesla.services = server:223.5.5.5
+in.appcenter.ms = script:Dnspod
+
+# Firebase Cloud Messaging
+mtalk.google.com = 108.177.125.188
+# Google Dl
+dl.google.com = server:119.29.29.29
+dl.l.google.com = server:119.29.29.29

@@ -1,0 +1,6 @@
+# Emby
+DOMAIN-KEYWORD,emby
+DOMAIN-SUFFIX,mb3admin.com
+DOMAIN-SUFFIX,mickeycloud.com
+DOMAIN-SUFFIX,plusmedia.site
+IP-CIDR,38.94.109.97/32,no-resolve

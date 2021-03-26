@@ -1,0 +1,6 @@
+#!name=App Monitor
+#!desc=iOS App 价格监控，价格变化时会自动弹出通知。
+
+[Script]
+
+App 价格监控 = type=cron,cronexp=3 0 0-23/1 * * *,script-path=JS/Appmonitor.js

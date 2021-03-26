@@ -1,0 +1,12 @@
+#!name=TikTok
+#!desc= 抖音日本 Unlock
+#!system=ios
+
+[URL Rewrite]
+#tiktok解锁直播区域限制
+(?<=_region=)CN(?=&) JP 307
+(?<=&mcc_mnc=)4 2 307
+^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$4 302
+(?<=\d\/\?\w{7}_\w{4}=)1[6-9]..(?=.?.?&) 18.4 307
+[MITM]
+hostname = %APPEND% *.byteoversea.com,*.tiktokv.com,*.tik-tokapi.com
