@@ -1,5 +1,5 @@
 # Emby
-USER-AGENT,emby*
+USER-AGENT,Emby*
 USER-AGENT,libmpv
 DOMAIN-SUFFIX,mb3admin.com
 DOMAIN-SUFFIX,mickeycloud.com
