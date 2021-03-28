@@ -1,10 +1,10 @@
-#!name=OLD_IPA Downloader
+#!name=Old_IPA Downloader
 #!desc=Computers need to trust  root Ca Surge (Decode base64 ca-p12 text in your Surge config -> Save .p12) and set proxy rule domain-keyword: -buy.itunes.apple.com(PAC proxy). (iOS. Open AppleStore search app. Share app into shortcut Old_iPA_Downloader, choose version app. PC: Open iTunes search and click Get). Done (Check \Music\iTunes\iTunes Media\Mobile Applications)
 
 //Link shortcut: https://www.icloud.com/shortcuts/bdbba3de9c8d42fe858bf210d20e5603
 
 [Script]
-OLD_IPA = type=http-request,pattern=(https:\/\/(.+\-|)buy\.itunes\.apple\.com\/WebObjects\/MZBuy.woa\/wa\/buyProduct)|(https:\/\/api\.unlimapps\.com\/.+\/apple_apps\/.+\/versions?),requires-body=1,max-size=0,debug=1,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/old_ipa.js, requires-body = true
+Old_IPA = type=http-request,pattern=(https:\/\/(.+\-|)buy\.itunes\.apple\.com\/WebObjects\/MZBuy.woa\/wa\/buyProduct)|(https:\/\/api\.unlimapps\.com\/.+\/apple_apps\/.+\/versions?),requires-body=1,max-size=0,debug=1,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/old_ipa.js, requires-body = true
 
 [MITM]
 hostname = %APPEND% *-buy.itunes.apple.com, api.unlimapps.com
