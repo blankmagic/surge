@@ -1,7 +1,0 @@
-#!name=Auto Outbound Mode
-#!desc=Automatically switch outbound mode when the network changes.
-
-[Script]
-//The Notification Format.
-//You can change the notification by yourself.
-Outbound-Mode = type=event,event-name=network-changed,script-path=https://raw.githubusercontent.com/Tempoblink/Surge-Scripts/master/network-changed.js
