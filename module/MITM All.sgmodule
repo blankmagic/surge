@@ -1,5 +1,5 @@
-#!name=MitM All Hostnames
-#!desc=Http Capture MitM All Hostnames
+#!name=MitM All
+#!desc=Perform MitM on all hostnames with port 443, except those to Apple and other common sites which can't be inspected. You still need configure CA certificate and enable the main switch of MitM.
 # 对所有端口为 433 的主机名执行 MitM，除了 Apple 和其他不能被解密的站点，您仍然需要配置 CA 证书并启用 MitM 开关。
 
 [MITM]
