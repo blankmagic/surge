@@ -3,10 +3,12 @@
 Please read the [Documentation](https://www.notion.so/maicoo/Surge-bf22101efe66497582ea937ddc750246) before using this Configuration.
 
 [Telegram Channel](https://t.me/Surge_classroom)
+
 -
 *Surge is a networking toolbox For iOS and macOS.*
 
   Resources: [Web](https://nssurge.com/) / [Manual](http://manual.nssurge.com/) / [Understanding Surge](https://manual.nssurge.com/book/understanding-surge/cn/) / [FAQ](https://nssurge.com/support) / [Community](https://community.nssurge.com/)
+  
 -
 *Special thanks*
 
