@@ -1,4 +1,4 @@
-***For pure self-use*** ⚠️
+### ***For pure self-use*** <img src="https://raw.githubusercontent.com/blankmagic/surge/main/IMG/hi.gif" width="25px">
 
 Please read the [Documentation](https://www.notion.so/maicoo/Surge-bf22101efe66497582ea937ddc750246) before using this Configuration.
 
