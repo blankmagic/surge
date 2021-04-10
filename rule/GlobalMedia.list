@@ -88,6 +88,8 @@ DOMAIN-KEYWORD,uk-live
 USER-AGENT,DAZN*
 DOMAIN-SUFFIX,dazn.com
 DOMAIN-SUFFIX,dazn-api.com
+DOMAIN-SUFFIX,dazndn.com
+DOMAIN-SUFFIX,indazn.com
 DOMAIN,d151l6v8er5bdm.cloudfront.net
 DOMAIN-KEYWORD,voddazn
 # > Disney+
@@ -113,15 +115,6 @@ DOMAIN-SUFFIX,fox.com
 DOMAIN-SUFFIX,foxdcg.com
 DOMAIN-SUFFIX,theplatform.com
 DOMAIN-SUFFIX,uplynk.com
-# > FOX+
-DOMAIN-SUFFIX,foxplus.com
-# DOMAIN-SUFFIX,theplatform.com
-DOMAIN,cdn-fox-networks-group-green.akamaized.net
-DOMAIN,d3cv4a9a9wh0bt.cloudfront.net
-DOMAIN,foxsports01-i.akamaihd.net
-DOMAIN,foxsports02-i.akamaihd.net
-DOMAIN,foxsports03-i.akamaihd.net
-DOMAIN,staticasiafox.akamaized.net
 # > HBO NOW & Max
 USER-AGENT,HBO%20NOW*
 DOMAIN-SUFFIX,hbo.com
@@ -129,6 +122,7 @@ DOMAIN-SUFFIX,hbogo.com
 DOMAIN-SUFFIX,hbonow.com
 USER-AGENT,HBOMAX*
 DOMAIN-SUFFIX,hbomax.com
+DOMAIN-SUFFIX,hbomaxcdn.com
 # > HBO GO HKG
 USER-AGENT,HBO%20GO%20PROD%20HKG*
 DOMAIN-SUFFIX,hbogoasia.com
@@ -183,6 +177,10 @@ DOMAIN,d349g9zuie06uo.cloudfront.net
 USER-AGENT,mytv*
 DOMAIN-SUFFIX,mytvsuper.com
 DOMAIN-SUFFIX,tvb.com
+# > Naver TV
+USER-AGENT,Naver%20TV*
+DOMAIN-SUFFIX,naver.com
+DOMAIN-SUFFIX,smartmediarep.com
 # > Netflix
 USER-AGENT,Argo*
 DOMAIN-SUFFIX,netflix.com
@@ -202,7 +200,7 @@ DOMAIN-SUFFIX,netflixdnstest6.com
 DOMAIN-SUFFIX,netflixdnstest7.com
 DOMAIN-SUFFIX,netflixdnstest8.com
 DOMAIN-SUFFIX,netflixdnstest9.com
-DOMAIN-KEYWORD,dualstack.apiproxy-device-prod-nlb-
+DOMAIN-KEYWORD,dualstack.apiproxy-
 DOMAIN-KEYWORD,dualstack.ichnaea-web-
 IP-CIDR,23.246.0.0/18,no-resolve
 IP-CIDR,37.77.184.0/21,no-resolve
@@ -224,6 +222,16 @@ DOMAIN-SUFFIX,nimg.jp
 # > Now E
 DOMAIN-SUFFIX,nowe.com
 DOMAIN-SUFFIX,nowestatic.com
+# > Paramount+
+USER-AGENT,PPlus*
+DOMAIN-SUFFIX,cbsi.com
+DOMAIN-SUFFIX,cbsaavideo.com
+DOMAIN-SUFFIX,cbsivideo.com
+DOMAIN-SUFFIX,paramountplus.com
+DOMAIN-SUFFIX,pplusstatic.com
+DOMAIN,cbsi.live.ott.irdeto.com
+DOMAIN,cbsplaylistserver.aws.syncbak.com
+DOMAIN,cbsservice.aws.syncbak.com
 # > PBS
 USER-AGENT,PBS*
 DOMAIN-SUFFIX,pbs.org
@@ -247,6 +255,10 @@ DOMAIN-SUFFIX,tik-tokapi.com
 DOMAIN-SUFFIX,tiktokcdn.com
 DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-KEYWORD,-tiktokcdn-com
+# > TVer
+USER-AGENT,TVer-Release*
+DOMAIN-SUFFIX,tver.jp
+DOMAIN,edge.api.brightcove.com
 # > Twitch
 DOMAIN-SUFFIX,jtvnw.net
 DOMAIN-SUFFIX,ttvnw.net
@@ -265,4 +277,6 @@ USER-AGENT,com.google.ios.youtube*
 USER-AGENT,YouTube*
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,ytimg.com
 DOMAIN,youtubei.googleapis.com
+DOMAIN,yt3.ggpht.com
