@@ -1,5 +1,5 @@
 #!name=Github Private
-#!desc=Access Github Private
+#!desc=Access GitHub private repositories
 
 [Script]
 Github Private = type=http-request, requires-body=0, pattern=^https?:\/\/(raw|gist)\.githubusercontent.com, script-path=Scripts/github-private.js
