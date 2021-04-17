@@ -1,0 +1,8 @@
+#!name=Github Private
+#!desc=Access Github Private
+
+[Script]
+Github Private = type=http-request, requires-body=0, pattern=^https?:\/\/(raw|gist)\.githubusercontent.com, script-path=Scripts/github-private.js
+
+[MITM]
+hostname = %APPEND% raw.githubusercontent.com, gist.githubusercontent.com
