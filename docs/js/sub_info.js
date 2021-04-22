@@ -9,8 +9,8 @@ Surge配置参考注释，感谢@asukanana,感谢@congcong.
 示例↓↓↓
 ----------------------------------------
 [Proxy Group]
-Name1 = select, policy-path=http://sub.info?url=xxx&reset_day=1
-Name2 = select, policy-path=http://sub.info?url=xxx&reset_day=8&expire=2022-02-01&alert=1
+Name1 = select, policy-path=http://sub.info?url=xxx&reset_day=1, update-interval=3600
+Name2 = select, policy-path=http://sub.info?url=xxx&reset_day=8&expire=2022-02-01&alert=1, update-interval=3600
 [Script]
 Sub_info = type=http-request,pattern=http://sub\.info,script-path=https://blankmagic.github.io/surge/docs/js/sub_info.js
 ----------------------------------------
