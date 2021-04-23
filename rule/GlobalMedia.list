@@ -92,6 +92,14 @@ DOMAIN-SUFFIX,dazndn.com
 DOMAIN-SUFFIX,indazn.com
 DOMAIN,d151l6v8er5bdm.cloudfront.net
 DOMAIN-KEYWORD,voddazn
+# > discovery+
+USER-AGENT,DPlus*
+USER-AGENT,discovery+*
+DOMAIN-SUFFIX,disco-api.com
+DOMAIN-SUFFIX,discoveryplus.co.uk
+DOMAIN-SUFFIX,discoveryplus.com
+DOMAIN-SUFFIX,discoveryplus.in
+DOMAIN-SUFFIX,dnitv.com
 # > Disney+
 USER-AGENT,Disney+*
 DOMAIN-SUFFIX,bamgrid.com
