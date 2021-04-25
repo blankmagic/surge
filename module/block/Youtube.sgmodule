@@ -19,4 +19,4 @@ URL-REGEX,https?:\/\/[\w-]+\.googlevideo\.com\/.+&oad,REJECT-TINYGIF
 ctier=[A-Z] citer=A 302
 
 [MITM]
-hostname = %APPEND% *.googlevideo.com
+hostname = %APPEND% *.youtube.com, *.googlevideo.com
