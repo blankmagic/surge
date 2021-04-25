@@ -2,5 +2,5 @@
 #!desc=Automatically switch outbound mode when the network changes.
 
 [Script]
-//You can change the notification by yourself.
+# You can change the notification by yourself.
 Outbound Mode = type=event,event-name=network-changed,script-path=Scripts/network-changed.js
