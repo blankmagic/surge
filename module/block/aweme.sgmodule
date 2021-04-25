@@ -6,7 +6,7 @@
 ^https?:\/\/(.*)\.amemv\.com\/aweme\/v2\/(follow\/)?feed\/ https://$1.amemv.com/aweme/v1/$2feed/ header
 
 [Script]
-抖音_Ads = type=http-response,pattern=^https?:\/\/.*\.amemv\.com\/aweme\/v1\/(feed|mix\/aweme|aweme\/post|(multi\/)?aweme\/detail|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/douyin.js
+Aweme = type=http-response,pattern=^https?:\/\/.*\.amemv\.com\/aweme\/v1\/(feed|mix\/aweme|aweme\/post|(multi\/)?aweme\/detail|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,script-path=https://Choler.github.io/Surge/Script/douyin.js,requires-body=1,max-size=-1
 
 [MITM]
 hostname = %APPEND% *.amemv.com
