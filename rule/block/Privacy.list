@@ -1,6 +1,4 @@
 # --- Privacy ---
-DOMAIN-SUFFIX,gz-data.com // https://www.v2ex.com/t/772523
-
 DOMAIN-SUFFIX,adjust.com
 DOMAIN-SUFFIX,airpr.com
 DOMAIN-SUFFIX,hotjar.com
@@ -71,6 +69,11 @@ DOMAIN,track.tiara.kakao.com
 DOMAIN-SUFFIX,googletagmanager.com
 DOMAIN-SUFFIX,google-analytics.com
 DOMAIN,safebrowsing.googleapis.com
+# > GozenData
+# https://www.v2ex.com/t/772523
+DOMAIN-SUFFIX,gozendata.com
+DOMAIN-SUFFIX,gzads.com
+DOMAIN-SUFFIX,gz-data.com
 # > GrowingIO
 DOMAIN-SUFFIX,giocdn.com
 DOMAIN-SUFFIX,growingio.com
