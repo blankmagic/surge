@@ -99,7 +99,7 @@ DOMAIN,exp.360in.com
 # (G)
 # > Google
 DOMAIN-SUFFIX,doubleclick.net
-#DOMAIN-SUFFIX,googleadservices.com
+DOMAIN-SUFFIX,googleadservices.com
 DOMAIN-SUFFIX,googleadsserving.cn
 DOMAIN-SUFFIX,googlesyndication.com
 DOMAIN-SUFFIX,googletagservices.com
@@ -125,6 +125,12 @@ DOMAIN,rp.hpplay.cn
 DOMAIN,rpt.hpplay.cn
 
 # (J)
+# >jxedt
+DOMAIN,richmanapi.jxedt.com
+DOMAIN,richmanmain.jxedt.com
+DOMAIN,richmanrules.jxedt.com
+
+# (K)
 # > Kingsoft
 DOMAIN,ad-stat.ksosoft.com
 DOMAIN,img.auction-ads.wpscdn.cn
@@ -134,8 +140,6 @@ DOMAIN,minfo.wps.cn
 DOMAIN,mobad.ijinshan.com
 DOMAIN,ups.ksmobile.net
 DOMAIN,ws.ksmobile.net
-
-# (K)
 # > Kuaishou
 DOMAIN-SUFFIX,e.kuaishou.com
 DOMAIN,js-ad.a.yximgs.com
@@ -228,6 +232,9 @@ DOMAIN-SUFFIX,aty.sohu.com
 DOMAIN,imp.optaim.com
 DOMAIN,v2.reachmax.cn
 DOMAIN,hui.sohu.com
+# > Snapcha‪t‬
+DOMAIN,ads.snapchat.com
+DOMAIN,adsapi.snapchat.com
 
 # (T)
 # --- (Tencent) ---
