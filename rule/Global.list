@@ -56,7 +56,7 @@ DOMAIN-SUFFIX,blogger.com
 DOMAIN-SUFFIX,getoutline.org
 DOMAIN-SUFFIX,gvt0.com
 DOMAIN-SUFFIX,gvt3.com
-DOMAIN-SUFFIX,xn—ngstr-lra8j.com
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 DOMAIN-SUFFIX,ytimg.com
 DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,.blogspot.
@@ -86,6 +86,15 @@ DOMAIN-SUFFIX,nytimes.com
 DOMAIN-SUFFIX,nytimg.com
 DOMAIN-SUFFIX,nytlog.com
 DOMAIN-SUFFIX,nytstyle.com
+# > Pinterest
+DOMAIN-SUFFIX,pinterest.at
+DOMAIN-SUFFIX,pinterest.ca
+DOMAIN-SUFFIX,pinterest.co.uk
+DOMAIN-SUFFIX,pinterest.com
+DOMAIN-SUFFIX,pinterest.de
+DOMAIN-SUFFIX,pinterest.fr
+DOMAIN-SUFFIX,pinterest.jp
+DOMAIN-SUFFIX,pinterest.se
 # > pixiv
 DOMAIN-SUFFIX,pixiv.net
 DOMAIN-SUFFIX,pixiv.org
@@ -188,8 +197,10 @@ DOMAIN-SUFFIX,crucial.com
 DOMAIN-SUFFIX,cts.com.tw
 DOMAIN-SUFFIX,cw.com.tw
 DOMAIN-SUFFIX,cyberctm.com
+DOMAIN-SUFFIX,cyclingnews.com
 DOMAIN-SUFFIX,dailymotion.com
 DOMAIN-SUFFIX,dailyview.tw
+DOMAIN-SUFFIX,dandanzan.com
 DOMAIN-SUFFIX,daum.net
 DOMAIN-SUFFIX,daumcdn.net
 DOMAIN-SUFFIX,dcard.tw
@@ -302,6 +313,7 @@ DOMAIN-SUFFIX,mega.nz
 DOMAIN-SUFFIX,mergersandinquisitions.com
 DOMAIN-SUFFIX,mingpao.com
 DOMAIN-SUFFIX,mixi.jp
+DOMAIN-SUFFIX,mixlr.com
 DOMAIN-SUFFIX,mobile01.com
 DOMAIN-SUFFIX,mubi.com
 DOMAIN-SUFFIX,myspace.com
@@ -410,6 +422,7 @@ DOMAIN-SUFFIX,uptodown.com
 DOMAIN-SUFFIX,urbandictionary.com
 DOMAIN-SUFFIX,ustream.tv
 DOMAIN-SUFFIX,uwants.com
+DOMAIN-SUFFIX,v2ex.com
 DOMAIN-SUFFIX,v2fly.org
 DOMAIN-SUFFIX,v2ray.com
 DOMAIN-SUFFIX,viber.com
@@ -432,8 +445,8 @@ DOMAIN-SUFFIX,worldcat.org
 DOMAIN-SUFFIX,wsj.com
 DOMAIN-SUFFIX,wsj.net
 DOMAIN-SUFFIX,xhamster.com
-DOMAIN-SUFFIX,xn—90wwvt03e.com
-DOMAIN-SUFFIX,xn—i2ru8q2qg.com
+DOMAIN-SUFFIX,xn--90wwvt03e.com
+DOMAIN-SUFFIX,xn--i2ru8q2qg.com
 DOMAIN-SUFFIX,xnxx.com
 DOMAIN-SUFFIX,xvideos.com
 DOMAIN-SUFFIX,yahoo.com
@@ -450,10 +463,7 @@ DOMAIN-SUFFIX,zoom.us
 
 DOMAIN,cc.tvbs.com.tw
 DOMAIN,ocsp.int-x3.letsencrypt.org
-DOMAIN,search.avira.com
 DOMAIN,us.weibo.com
-
-DOMAIN-KEYWORD,.pinterest.
 
 DOMAIN-SUFFIX,edu
 DOMAIN-SUFFIX,gov
@@ -524,7 +534,7 @@ DOMAIN-SUFFIX,weebly.com
 DOMAIN-SUFFIX,twitter.jp
 
 # (Region-Restricted Access Denied)
-# —(Apple)—
+# ---(Apple)---
 # > Apple URL Shortener
 DOMAIN-SUFFIX,appsto.re
 # > iBooks Store download
@@ -539,7 +549,7 @@ DOMAIN-SUFFIX,smoot.apple.com
 DOMAIN,lookup-api.apple.com
 # > Apple Music Web
 DOMAIN,beta.music.apple.com
-# ——
+# ------
 # > Others
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,cccat.io
