@@ -26,13 +26,13 @@ Please read the [Documentation](https://www.notion.so/maicoo/Surge-bf22101efe664
 
 *Special thanks*
 
-* [ConnersHua/surge](https://github.com/DivineEngine/Profiles/tree/master/Surge)
-* [Peng-YM/Sub-Store](https://github.com/Peng-YM/Sub-Store/tree/master/config)
-* [Lãng Khách/Surge-LK](https://github.com/langkhach270389/Surge-LK/tree/main)
-* [NobyDa/Script](https://github.com/NobyDa/Script/tree/master)
-* [Choler/Surge](https://github.com/Choler/Surge)
-* [Yichahucha/surge](https://github.com/yichahucha/surge/tree/master)
-* [Chavyleung/scripts](https://github.com/chavyleung/scripts)
+* DivineEngine ([@ConnersHua](https://github.com/DivineEngine/Profiles/tree/master/Surge))
+* Sub-Store ([@Peng-YM](https://github.com/Peng-YM/Sub-Store/tree/master/config))
+* Surge-LK ([@Lãng Khách](https://github.com/langkhach270389/Surge-LK/tree/main))
+* Surge Script ([@NobyDa](https://github.com/NobyDa/Script/tree/master))
+* Aweme Script ([@Choler](https://github.com/Choler/Surge))
+* Historical Price ([@Yichahucha](https://github.com/yichahucha/surge/tree/master))
+* BoxJS & Task Scripts ([@Chavyleung](https://github.com/chavyleung/scripts))
 
 License
 -
