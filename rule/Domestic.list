@@ -152,6 +152,7 @@ DOMAIN-SUFFIX,sohu.com
 DOMAIN-SUFFIX,sohucs.com
 DOMAIN-SUFFIX,sohu-inc.com
 DOMAIN-SUFFIX,v-56.com
+USER-AGENT,%E6%91%B8%E9%B1%BCkik*
 # > Sogo
 DOMAIN-SUFFIX,sogo.com
 DOMAIN-SUFFIX,sogou.com
