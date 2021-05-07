@@ -69,6 +69,9 @@ DOMAIN,track.tiara.kakao.com
 DOMAIN-SUFFIX,googletagmanager.com
 DOMAIN-SUFFIX,google-analytics.com
 DOMAIN,safebrowsing.googleapis.com
+DOMAIN-SUFFIX,video-ad-stats.googlesyndication.com
+DOMAIN-SUFFIX,firebaselogging-pa.googleapis.com
+DOMAIN-SUFFIX,firebaselogging.googleapis.com
 # > GozenData
 # https://www.v2ex.com/t/772523
 DOMAIN-SUFFIX,gozendata.com
@@ -89,6 +92,8 @@ DOMAIN-SUFFIX,talkingdata.net
 DOMAIN-SUFFIX,udrig.com
 # > Tencent
 DOMAIN-SUFFIX,trace.qq.com
+DOMAIN-SUFFIX,analy.qq.com
+DOMAIN-SUFFIX,report.qq.com
 DOMAIN,btrace.qq.com
 DOMAIN,btrace.video.qq.com
 DOMAIN,mtrace.qq.com
