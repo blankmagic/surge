@@ -23,17 +23,17 @@ USER-AGENT,avos*,REJECT
 ^https?:\/\/www\.zhihu\.com\/appview\/(p|v2\/answer|zvideo)\/.*entry=(preload-topstory|preload-search|preload-subscription) - reject
 
 [Map Local]
-^https?:\/\/api\.zhihu\.com/moments/hybrid\? data="https://blankmagic.github.io/surge/maplocal/blank-dict.json"
-^https?:\/\/api\.zhihu\.com\/(notifications\/v3\/count|v3\/package|me\/guides|drama\/living-info|ad|fringe|commercial|market\/popovers|.*featured-comment-ad) data="https://blankmagic.github.io/surge/maplocal/blank-dict.json"
-^https?:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config data="https://blankmagic.github.io/surge/maplocal/blank.txt"
-^https?:\/\/api\.zhihu\.com\/brand\/question\/\d+/card\? data="https://blankmagic.github.io/surge/maplocal/blank-dict.json"
-^https?:\/\/api\.zhihu\.com\/moments\/recent data="https://blankmagic.github.io/surge/maplocal/blank-dict.json"
-^https?:\/\/www\.zhihu\.com\/api\/v4/(questions|anwsers)\/\d+/related-readings data="https://blankmagic.github.io/surge/maplocal/blank-dict.json"
-^https?:\/\/www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations data="https://blankmagic.github.io/surge/maplocal/blank-dict.json"
-^https?:\/\/www\.zhihu\.com\/api\/v4\/hot_recommendation data="https://blankmagic.github.io/surge/maplocal/blank-dict.json"
-^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\? data="https://blankmagic.github.io/surge/maplocal/blank-dict.json"
-^https?:\/\/www\.zhihu\.com\/commercial_api\/banners_v3\/mobile_banner data="https://blankmagic.github.io/surge/maplocal/blank-dict.json"
-^https?:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation data="https://blankmagic.github.io/surge/maplocal/blank-dict.json"
+^https?:\/\/api\.zhihu\.com/moments/hybrid\? data="https://blankmagic.github.io/surge/MapLocal/blank-dict.json"
+^https?:\/\/api\.zhihu\.com\/(notifications\/v3\/count|v3\/package|me\/guides|drama\/living-info|ad|fringe|commercial|market\/popovers|.*featured-comment-ad) data="https://blankmagic.github.io/surge/MapLocal/blank-dict.json"
+^https?:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config data="https://blankmagic.github.io/surge/MapLocal/blank.txt"
+^https?:\/\/api\.zhihu\.com\/brand\/question\/\d+/card\? data="https://blankmagic.github.io/surge/MapLocal/blank-dict.json"
+^https?:\/\/api\.zhihu\.com\/moments\/recent data="https://blankmagic.github.io/surge/MapLocal/blank-dict.json"
+^https?:\/\/www\.zhihu\.com\/api\/v4/(questions|anwsers)\/\d+/related-readings data="https://blankmagic.github.io/surge/MapLocal/blank-dict.json"
+^https?:\/\/www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations data="https://blankmagic.github.io/surge/MapLocal/blank-dict.json"
+^https?:\/\/www\.zhihu\.com\/api\/v4\/hot_recommendation data="https://blankmagic.github.io/surge/MapLocal/blank-dict.json"
+^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\? data="https://blankmagic.github.io/surge/MapLocal/blank-dict.json"
+^https?:\/\/www\.zhihu\.com\/commercial_api\/banners_v3\/mobile_banner data="https://blankmagic.github.io/surge/MapLocal/blank-dict.json"
+^https?:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation data="https://blankmagic.github.io/surge/MapLocal/blank-dict.json"
 
 [Script]
 # DouYu - rtbapi.douyucdn.cn
