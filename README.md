@@ -20,11 +20,8 @@ Please read the [Documentation](https://www.notion.so/maicoo/Surge-bf22101efe664
 
   [FAQ](https://nssurge.com/support)
   
-  [Community](https://community.nssurge.com/)
-  
+  [Community](https://community.nssurge.com/)  
 </details>
-
-<details>
 
 *Special thanks*
 
@@ -38,7 +35,6 @@ Please read the [Documentation](https://www.notion.so/maicoo/Surge-bf22101efe664
 * [Choler](https://github.com/Choler/Surge)
 * [Yichahucha](https://github.com/yichahucha/surge/tree/master)
 * [Chavyleung](https://github.com/chavyleung/scripts)
-
 </details>
 
 License
