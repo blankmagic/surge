@@ -48,7 +48,7 @@ DOMAIN-SUFFIX,gzads.com
 DOMAIN-SUFFIX,gz-data.com
 # > GrowingIO
 DOMAIN-SUFFIX,giocdn.com
-DOMAIN-SUFFIX,growingio.com
+#DOMAIN-SUFFIX,growingio.com
 # > MI
 DOMAIN-SUFFIX,tracking.miui.com
 DOMAIN,api.miwifi.com
