@@ -152,7 +152,6 @@ DOMAIN-SUFFIX,sohu.com
 DOMAIN-SUFFIX,sohucs.com
 DOMAIN-SUFFIX,sohu-inc.com
 DOMAIN-SUFFIX,v-56.com
-USER-AGENT,%E6%91%B8%E9%B1%BCkik*
 # > Sogo
 DOMAIN-SUFFIX,sogo.com
 DOMAIN-SUFFIX,sogou.com
@@ -162,7 +161,7 @@ DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,steampowered.com
 DOMAIN-SUFFIX,steamstatic.com
 # > Tencent
-USER-AGENT,MicroMessenger%20Client
+USER-AGENT,MicroMessenger*
 USER-AGENT,WeChat*
 USER-AGENT,%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1*
 DOMAIN-SUFFIX,gtimg.com
@@ -288,6 +287,7 @@ DOMAIN-SUFFIX,geilicdn.com
 DOMAIN-SUFFIX,getpricetag.com
 DOMAIN-SUFFIX,gifshow.com
 DOMAIN-SUFFIX,godic.net
+DOMAIN-SUFFIX,heweather.net
 DOMAIN-SUFFIX,hicloud.com
 DOMAIN-SUFFIX,hongxiu.com
 DOMAIN-SUFFIX,hostbuf.com
@@ -321,8 +321,8 @@ DOMAIN-SUFFIX,ntp.org
 DOMAIN-SUFFIX,nvidia.com
 DOMAIN-SUFFIX,oracle.com
 DOMAIN-SUFFIX,plex.tv
-DOMAIN-SUFFIX,qdaily.com
 DOMAIN-SUFFIX,qidian.com
+DOMAIN-SUFFIX,qweather.com
 DOMAIN-SUFFIX,qyer.com
 DOMAIN-SUFFIX,qyerstatic.com
 DOMAIN-SUFFIX,raychase.net
@@ -342,7 +342,6 @@ DOMAIN-SUFFIX,takungpao.com
 DOMAIN-SUFFIX,teamviewer.com
 DOMAIN-SUFFIX,tianyancha.com
 DOMAIN-SUFFIX,tophub.today
-DOMAIN-SUFFIX,udacity.com
 DOMAIN-SUFFIX,uning.com
 DOMAIN-SUFFIX,weather.com
 DOMAIN-SUFFIX,weico.cc
