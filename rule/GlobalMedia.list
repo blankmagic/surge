@@ -48,6 +48,9 @@ USER-AGENT,YouTubeMusic*
 # > Himalaya
 USER-AGENT,Himalaya*
 DOMAIN-SUFFIX,himalaya.com
+# > Overcast
+USER-AGENT,Overcast*
+DOMAIN-SUFFIX,overcast.fm
 
 # (Video)
 # > AbemaTV
@@ -78,6 +81,7 @@ DOMAIN,dmqdd6hw24ucf.cloudfront.net
 DOMAIN,d22qjgkvxw22r6.cloudfront.net
 DOMAIN,d1v5ir2lpwr8os.cloudfront.net
 DOMAIN,d27xxe7juh1us6.cloudfront.net
+# DOMAIN,www.amazon.com
 DOMAIN-KEYWORD,avoddashs
 # > Apple TV
 DOMAIN,linear.tv.apple.com
