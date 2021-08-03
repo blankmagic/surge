@@ -1,4 +1,5 @@
 # --- Blocking Ads ---
+
 # > General
 DOMAIN-KEYWORD,adservice
 
@@ -78,6 +79,8 @@ DOMAIN-SUFFIX,iad-06.braze.com
 DOMAIN-SUFFIX,iad-08.braze.com
 
 # (C)
+# > CCTVVideo
+DOMAIN,adstore-index-1252524079.file.myqcloud.com
 # > CNTV
 DOMAIN,galaxy.bjcathay.com
 DOMAIN,mdrecv.app.cntvwb.cn
@@ -95,6 +98,10 @@ DOMAIN,logs.chelaile.net.cn
 DOMAIN,dispatcher.360in.com
 DOMAIN,ad.360in.com
 DOMAIN,exp.360in.com
+
+# (D)
+# > Douban
+AND,((USER-AGENT,Frodo*), (DOMAIN,119.29.29.29))
 
 # (G)
 # > Google
@@ -157,6 +164,12 @@ DOMAIN,cwx.lianwangtech.com
 DOMAIN,c1wx.lianwangtech.com
 
 # (M)
+# > Microsoft
+DOMAIN-SUFFIX,ads.msn.com
+DOMAIN-SUFFIX,ads1.msn.com
+DOMAIN-SUFFIX,ads2.msn.com
+DOMAIN-SUFFIX,rads.msn.com
+DOMAIN,mobileads.msn.com
 # > MojiWeather
 DOMAIN,ad.api.moji.com
 DOMAIN,adlaunch.moji.com
@@ -253,6 +266,7 @@ DOMAIN,wxsnsdy.wxs.qq.com
 DOMAIN,wxsnsdythumb.wxs.qq.com
 # > Tencent Music (TME)
 DOMAIN,ad.tencentmusic.com
+DOMAIN,adstats.tencentmusic.com
 DOMAIN,adserviceretry.kugou.com
 DOMAIN,ads.service.kugou.com
 DOMAIN,adsfile.bssdlbig.kugou.com
