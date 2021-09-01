@@ -1,22 +1,14 @@
-#!name=YouTube
-#!desc=Skip YouTube video ads
-# Don't use Premium
-
-[Rule]
-URL-REGEX,https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost,REJECT
-URL-REGEX,https?:\/\/.+.youtube.com\/api\/stats\/ads,REJECT
-URL-REGEX,https?:\/\/.+.youtube.com\/get_midroll_,REJECT
-URL-REGEX,https?:\/\/.+.youtube.com\/pagead\/,REJECT
-URL-REGEX,https?:\/\/.+.youtube.com\/ptracking\?,REJECT
-URL-REGEX,https?:\/\/.+.youtube.com\/_get_ads,REJECT
-URL-REGEX,https?:\/\/premiumyva.appspot.com\/vmclickstoadvertisersite,REJECT
-URL-REGEX,https?:\/\/s0.2mdn.net\/ads\/,REJECT
-URL-REGEX,https?:\/\/stats.tubemogul.com\/stats\/,REJECT
-URL-REGEX,https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adformat,REJECT
-URL-REGEX,https?:\/\/[\w-]+\.googlevideo\.com\/.+&oad,REJECT-TINYGIF
+#!name=Block YouTube Advertising
+#!desc=仅用于视频广告，不适用允许 UDP 转发的节点及 Premium。
+#!system=ios
 
 [URL Rewrite]
-ctier=[A-Z] citer=A 302
+(^https?:\/\/(?!redirector)[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+)(ctier=L)(&.+) $1$4 header
+^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+(&oad|ctier) - reject
+
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject
+^https?:\/\/\s.youtube.com/api/stats/qoe?.*adformat= - reject
 
 [MITM]
-hostname = %APPEND% *.youtube.com, *.googlevideo.com
+hostname = %APPEND% *.googlevideo.com,www.youtube.com,s.youtube.com
