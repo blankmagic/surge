@@ -1,4 +1,5 @@
 # Globla Services
+# (DNS Cache Pollution)
 # > Amazon
 DOMAIN-SUFFIX,amazon.co.jp
 DOMAIN,d3c33hcgiwev3.cloudfront.net
@@ -499,7 +500,6 @@ DOMAIN-SUFFIX,ggpht.com
 DOMAIN-SUFFIX,gmail.com
 DOMAIN-SUFFIX,gmodules.com
 DOMAIN-SUFFIX,godoc.org
-DOMAIN-SUFFIX,golang.org
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,gv.com
 DOMAIN-SUFFIX,gwtproject.org
@@ -541,22 +541,24 @@ DOMAIN-SUFFIX,twitter.jp
 
 # (Region-Restricted Access Denied)
 # ---(Apple)---
-# > Apple URL Shortener
-DOMAIN-SUFFIX,appsto.re
-# > iBooks Store download
-DOMAIN,books.itunes.apple.com
-# > App Store Preview
+DOMAIN-SUFFIX,appsto.re // Apple URL Shortener
+DOMAIN,books.itunes.apple.com // iBooks Store download
+DOMAIN,api-glb-sea.smoot.apple.com // Spotlight
+DOMAIN,beta.music.apple.com // Apple Music Web
+DOMAIN,tv.apple.com // Apple TV Web Preview
+DOMAIN,uts-api.itunes.apple.com
+# > App Store Web Preview
 DOMAIN,apps.apple.com
 DOMAIN,itunes.apple.com
-# > Spotlight
-DOMAIN,api-glb-sea.smoot.apple.com
 # > Look Up
 DOMAIN-SUFFIX,smoot.apple.com
 DOMAIN,lookup-api.apple.com
-# > Apple Music Web
-DOMAIN,beta.music.apple.com
 # ------
+# Google
+DOMAIN-SUFFIX,go.dev
+DOMAIN-SUFFIX,golang.org
 # > Others
+DOMAIN-SUFFIX,aicoin.com
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,cccat.io
 DOMAIN-SUFFIX,dubox.com
