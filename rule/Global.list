@@ -19,9 +19,12 @@ DOMAIN-SUFFIX,binance.com
 DOMAIN-SUFFIX,bitcointalk.org
 DOMAIN-SUFFIX,bitfinex.com
 DOMAIN-SUFFIX,bitmex.com
+DOMAIN-SUFFIX,coingecko.com
+DOMAIN-SUFFIX,coinmarketcap.com
 DOMAIN-SUFFIX,gate.io
 DOMAIN-SUFFIX,huobi.com
 DOMAIN-SUFFIX,okex.com
+DOMAIN-SUFFIX,poloniex.com
 DOMAIN-SUFFIX,uniswap.org
 DOMAIN-SUFFIX,zb.com
 # > Discord
@@ -59,6 +62,7 @@ DOMAIN-SUFFIX,appspot.com
 DOMAIN-SUFFIX,blogger.com
 DOMAIN-SUFFIX,getoutline.org
 DOMAIN-SUFFIX,gvt0.com
+DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,gvt3.com
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 DOMAIN-SUFFIX,ytimg.com
@@ -116,11 +120,14 @@ IP-CIDR,91.108.12.0/22,no-resolve
 IP-CIDR,91.108.16.0/22,no-resolve
 IP-CIDR,91.108.20.0/22,no-resolve
 IP-CIDR,91.108.56.0/22,no-resolve
-IP-CIDR,95.161.64.0/20,no-resolve
+IP-CIDR,91.105.192.0/23,no-resolve
 IP-CIDR,149.154.160.0/20,no-resolve
+IP-CIDR,185.76.151.0/24,no-resolve
 IP-CIDR6,2001:b28:f23d::/48,no-resolve
 IP-CIDR6,2001:b28:f23f::/48,no-resolve
 IP-CIDR6,2001:67c:4e8::/48,no-resolve
+IP-CIDR6,2001:b28:f23c::/48,no-resolve
+IP-CIDR6,2a0a:f280::/32,no-resolve
 # > Twitter
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,periscope.tv
@@ -416,6 +423,7 @@ DOMAIN-SUFFIX,tineye.com
 DOMAIN-SUFFIX,tiny.cc
 DOMAIN-SUFFIX,tinyurl.com
 DOMAIN-SUFFIX,torproject.org
+DOMAIN-SUFFIX,tradingview.com
 DOMAIN-SUFFIX,tumblr.com
 DOMAIN-SUFFIX,turbobit.net
 DOMAIN-SUFFIX,tutanota.com
@@ -469,6 +477,7 @@ DOMAIN-SUFFIX,z-lib.org
 DOMAIN-SUFFIX,zoom.us
 
 DOMAIN,cc.tvbs.com.tw
+DOMAIN,clubhouse.pubnubapi.com
 DOMAIN,ocsp.int-x3.letsencrypt.org
 DOMAIN,us.weibo.com
 
@@ -543,22 +552,20 @@ DOMAIN-SUFFIX,twitter.jp
 # ---(Apple)---
 DOMAIN-SUFFIX,appsto.re // Apple URL Shortener
 DOMAIN,books.itunes.apple.com // iBooks Store download
-DOMAIN,api-glb-sea.smoot.apple.com // Spotlight
+DOMAIN-SUFFIX,smoot.apple.com // Spotlight
 DOMAIN,beta.music.apple.com // Apple Music Web
-DOMAIN,tv.apple.com // Apple TV Web Preview
-DOMAIN,uts-api.itunes.apple.com
-# > App Store Web Preview
+DOMAIN,lookup-api.apple.com // Look Up
+# > Web Preview
 DOMAIN,apps.apple.com
 DOMAIN,itunes.apple.com
-# > Look Up
-DOMAIN-SUFFIX,smoot.apple.com
-DOMAIN,lookup-api.apple.com
+DOMAIN,tv.apple.com
 # ------
 # Google
 DOMAIN-SUFFIX,go.dev
 DOMAIN-SUFFIX,golang.org
 # > Others
 DOMAIN-SUFFIX,aicoin.com
+DOMAIN-SUFFIX,aimoon.com
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,cccat.io
 DOMAIN-SUFFIX,dubox.com
@@ -575,7 +582,6 @@ DOMAIN,appleid.apple.com
 DOMAIN,developer.apple.com
 DOMAIN,www.icloud.com
 DOMAIN,ocsp.apple.com
-DOMAIN,xp.apple.com
 # > DigiCert
 DOMAIN,cacerts.digicert.com
 DOMAIN,crl3.digicert.com
