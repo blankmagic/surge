@@ -10,6 +10,14 @@ DOMAIN,a248.e.akamai.net
 DOMAIN,a771.dscq.akamai.net
 # > Apple
 DOMAIN,testflight.apple.com
+# > Bloomberg
+DOMAIN-SUFFIX,bloomberg.cn
+DOMAIN-SUFFIX,bloomberg.com
+DOMAIN-SUFFIX,bloomberg.de
+# > Clubhouse
+DOMAIN-SUFFIX,clubhouseapi.com
+DOMAIN-SUFFIX,joinclubhouse.com
+DOMAIN,clubhouse.pubnubapi.com
 # > Crypto
 DOMAIN-SUFFIX,aex.com
 DOMAIN-SUFFIX,bibox.com
@@ -28,6 +36,7 @@ DOMAIN-SUFFIX,coincheck.com
 DOMAIN-SUFFIX,coingecko.com
 DOMAIN-SUFFIX,coinmarketcap.com
 DOMAIN-SUFFIX,coinone.co.kr
+DOMAIN-SUFFIX,etherscan.io
 DOMAIN-SUFFIX,ftx.com
 DOMAIN-SUFFIX,gate.io
 DOMAIN-SUFFIX,gemini.com
@@ -49,11 +58,14 @@ DOMAIN-SUFFIX,dropbox.com
 DOMAIN-SUFFIX,dropboxapi.com
 DOMAIN-SUFFIX,dropboxusercontent.com
 # > Facebook
+DOMAIN-SUFFIX,accountkit.com
 DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,f8.com
 DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,facebook.net
 DOMAIN-SUFFIX,fb.com
 DOMAIN-SUFFIX,fb.me
+DOMAIN-SUFFIX,fb.watch
 DOMAIN-SUFFIX,fbaddins.com
 DOMAIN-SUFFIX,fbcdn.net
 DOMAIN-SUFFIX,fbsbx.com
@@ -157,6 +169,9 @@ DOMAIN-SUFFIX,wikimedia.org
 DOMAIN-SUFFIX,wikinews.org
 DOMAIN-SUFFIX,wikipedia.org
 DOMAIN-SUFFIX,wikiquote.org
+# > Yandex
+DOMAIN-SUFFIX,yadi.sk
+DOMAIN,disk.yandex.com
 # > Others
 DOMAIN-SUFFIX,4shared.com
 DOMAIN-SUFFIX,9cache.com
@@ -192,8 +207,6 @@ DOMAIN-SUFFIX,behance.net
 DOMAIN-SUFFIX,biggo.com.tw
 DOMAIN-SUFFIX,bit.ly
 DOMAIN-SUFFIX,bloglovin.com
-DOMAIN-SUFFIX,bloomberg.cn
-DOMAIN-SUFFIX,bloomberg.com
 DOMAIN-SUFFIX,blubrry.com
 DOMAIN-SUFFIX,book.com.tw
 DOMAIN-SUFFIX,booklive.jp
@@ -212,7 +225,6 @@ DOMAIN-SUFFIX,channelnewsasia.com
 DOMAIN-SUFFIX,ck101.com
 DOMAIN-SUFFIX,clarionproject.org
 DOMAIN-SUFFIX,cloudcone.com
-DOMAIN-SUFFIX,clubhouseapi.com
 DOMAIN-SUFFIX,clyp.it
 DOMAIN-SUFFIX,cna.com.tw
 DOMAIN-SUFFIX,comparitech.com
@@ -251,7 +263,6 @@ DOMAIN-SUFFIX,elpais.com
 DOMAIN-SUFFIX,enanyang.my
 DOMAIN-SUFFIX,encyclopedia.com
 DOMAIN-SUFFIX,esoir.be
-DOMAIN-SUFFIX,etherscan.io
 DOMAIN-SUFFIX,euronews.com
 DOMAIN-SUFFIX,evozi.com
 DOMAIN-SUFFIX,exblog.jp
@@ -306,7 +317,6 @@ DOMAIN-SUFFIX,japantimes.co.jp
 DOMAIN-SUFFIX,jiji.com
 DOMAIN-SUFFIX,jinx.com
 DOMAIN-SUFFIX,jkforum.net
-DOMAIN-SUFFIX,joinclubhouse.com
 DOMAIN-SUFFIX,joinmastodon.org
 DOMAIN-SUFFIX,justmysocks.net
 DOMAIN-SUFFIX,justpaste.it
@@ -332,6 +342,7 @@ DOMAIN-SUFFIX,mailchimp.com
 DOMAIN-SUFFIX,marc.info
 DOMAIN-SUFFIX,matters.news
 DOMAIN-SUFFIX,maying.co
+DOMAIN-SUFFIX,medibang.com
 DOMAIN-SUFFIX,medium.com
 DOMAIN-SUFFIX,mega.nz
 DOMAIN-SUFFIX,mergersandinquisitions.com
@@ -421,6 +432,7 @@ DOMAIN-SUFFIX,straitstimes.com
 DOMAIN-SUFFIX,streamable.com
 DOMAIN-SUFFIX,streema.com
 DOMAIN-SUFFIX,substack.com
+DOMAIN-SUFFIX,substack.com
 DOMAIN-SUFFIX,t66y.com
 DOMAIN-SUFFIX,tapatalk.com
 DOMAIN-SUFFIX,teco-hk.org
@@ -475,7 +487,6 @@ DOMAIN-SUFFIX,xn--90wwvt03e.com
 DOMAIN-SUFFIX,xn--i2ru8q2qg.com
 DOMAIN-SUFFIX,xnxx.com
 DOMAIN-SUFFIX,xvideos.com
-DOMAIN-SUFFIX,yadi.sk
 DOMAIN-SUFFIX,yahoo.com
 DOMAIN-SUFFIX,yandex.ru
 DOMAIN-SUFFIX,ycombinator.com
@@ -490,7 +501,7 @@ DOMAIN-SUFFIX,z-lib.org
 DOMAIN-SUFFIX,zoom.us
 
 DOMAIN,cc.tvbs.com.tw
-DOMAIN,clubhouse.pubnubapi.com
+DOMAIN,cloud-cdn-digitalocean-com.global.ssl.fastly.net
 DOMAIN,ocsp.int-x3.letsencrypt.org
 DOMAIN,us.weibo.com
 
@@ -555,6 +566,7 @@ DOMAIN-SUFFIX,telesco.pe
 # > Facebook
 DOMAIN-KEYWORD,.facebook.
 DOMAIN-SUFFIX,facebookmail.com
+DOMAIN-SUFFIX,parse.com
 # > Others
 DOMAIN-SUFFIX,noxinfluencer.com
 DOMAIN-SUFFIX,smartmailcloud.com
@@ -570,6 +582,7 @@ DOMAIN,beta.music.apple.com // Apple Music Web
 DOMAIN,lookup-api.apple.com // Look Up
 # > Web Preview
 DOMAIN,apps.apple.com
+DOMAIN,books.apple.com
 DOMAIN,itunes.apple.com
 DOMAIN,tv.apple.com
 # > Podcasts
@@ -596,6 +609,7 @@ DOMAIN-SUFFIX,cccat.io
 DOMAIN-SUFFIX,dubox.com
 DOMAIN-SUFFIX,duboxcdn.com
 DOMAIN-SUFFIX,ifixit.com
+DOMAIN-SUFFIX,linkedin.com
 DOMAIN-SUFFIX,mangakakalot.com
 DOMAIN-SUFFIX,shopeemobile.com
 DOMAIN-SUFFIX,sushi.com
@@ -613,7 +627,6 @@ DOMAIN,crl3.digicert.com
 DOMAIN,crl4.digicert.com
 DOMAIN,ocsp.digicert.com
 # > Others
-DOMAIN-SUFFIX,cloudcone.com.cn
 DOMAIN-SUFFIX,inkbunny.net
 DOMAIN-SUFFIX,metapix.net
 DOMAIN-SUFFIX,s3.amazonaws.com
