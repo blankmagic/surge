@@ -1,9 +1,5 @@
 # Unbreak
 # > General
-USER-AGENT,archero*
-USER-AGENT,coffeecorp*
-USER-AGENT,Coffee%20Corp*
-USER-AGENT,restaurant-mobile*
 DOMAIN,app.adjust.com
 DOMAIN,bdtj.tagtic.cn
 # > Alibaba
@@ -31,7 +27,7 @@ DOMAIN,alt6-mtalk.google.com
 DOMAIN,alt7-mtalk.google.com
 DOMAIN,alt8-mtalk.google.com
 # >> Paramount+
-DOMAIN,pubads.g.doubleclick.net
+# DOMAIN,pubads.g.doubleclick.net
 # > Tencent
 DOMAIN,fairplay.l.qq.com
 DOMAIN,livew.l.qq.com
