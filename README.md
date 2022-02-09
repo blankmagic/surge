@@ -37,11 +37,11 @@ Please read the [Documentation](https://www.notion.so/maicoo/Surge-bf22101efe664
 * [Chavyleung](https://github.com/chavyleung/scripts)
 </details>
 
-### 配置
+### ***配置***
 
 你可以从该 URL 下载这个 [配置文件](https://blankmagic.github.io/surge/Profile.conf)
 
-### 说明
+### ***说明***
 
 *关于 IPv6*
 
