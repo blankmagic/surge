@@ -67,7 +67,6 @@ DOMAIN,hmma.baidu.com
 DOMAIN,track.tiara.daum.net
 DOMAIN,track.tiara.kakao.com
 # > Google
-DOMAIN-SUFFIX,googletagmanager.com
 DOMAIN-SUFFIX,google-analytics.com
 DOMAIN,safebrowsing.googleapis.com
 # > GozenData
