@@ -1,8 +1,10 @@
 # China Area Network
 DOMAIN-SUFFIX,flyert.com
 DOMAIN-SUFFIX,gandi.net
-DOMAIN-SUFFIX,steampowered.com // Steam Client
+DOMAIN-SUFFIX,cm.steampowered.com // Steam Connect Manager Servers
+DOMAIN,api.steampowered.com
 DOMAIN,download.jetbrains.com
+DOMAIN,origin-a.akamaihd.net // Origin Download
 # ---(Microsoft)---
 # > Outlook
 DOMAIN,outlook.office365.com
@@ -20,6 +22,7 @@ DOMAIN,ntservicepack.microsoft.com
 # > PayPal
 DOMAIN-SUFFIX,paypal.com
 DOMAIN-SUFFIX,paypal.me
+DOMAIN-SUFFIX,paypal-mktg.com
 DOMAIN-SUFFIX,paypalobjects.com
 # > Tencent
 IP-CIDR,182.254.116.0/24,no-resolve
