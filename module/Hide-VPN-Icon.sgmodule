@@ -1,5 +1,5 @@
 #!name=Hide VPN Icon
-#!desc=隐藏 VPN 图标
+#!desc=Hide VPN icon in the status bar
 
 [General]
 hide-vpn-icon=true
