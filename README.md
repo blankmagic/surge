@@ -57,11 +57,6 @@ Please read the [Documentation](https://www.notion.so/maicoo/Surge-bf22101efe664
 非必要不建议使用 DoH；
 > 必要指的是如中国移动这种抢答公共 DNS 的运营商
 
-*关于 Apple 分流*
-
-默认 Apple 分流为直连（除了被动或主动屏蔽的那些，所以 Apple.list 放在 Global.list 之后），所以如果想完全走代理可以将 `RULE-SET,Apple.list` 修改为代理策略。
-
-但若想 Apple 只要国内全走直连只要国外全走代理可将 `RULE-SET,Apple.list` 注释或移除，**前提是 Apple 相关域名仅使用国内 DNS**。
 
 License
 -
