@@ -39,7 +39,7 @@ Please read the [Documentation](https://www.notion.so/maicoo/Surge-bf22101efe664
 
 ### ***配置***
 
-你可以从该 URL 下载这个 [配置文件](https://blankmagic.github.io/surge/Profile.conf)
+你可以从该 URL 下载这个 [配置文件](https://blankmagic.github.io/surge/profile.conf)
 
 ### ***说明***
 
