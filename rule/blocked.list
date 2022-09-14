@@ -19,3 +19,6 @@ DOMAIN-KEYWORD,whatsapp
 DOMAIN-SUFFIX,letsencrypt.org
 DOMAIN-SUFFIX,android.com
 DOMAIN-SUFFIX,ytimg.com
+
+# ASN
+IP-ASN,AS8075 // Wikimedia
