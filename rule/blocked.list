@@ -1,28 +1,40 @@
-# Alphabet
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-KEYWORD,blogspot
-DOMAIN-SUFFIX,letsencrypt.org
-DOMAIN-SUFFIX,android.com
 # Dropbox
 DOMAIN-KEYWORD,dropbox
+
+# GitHub
+DOMAIN-SUFFIX,githubusercontent.com
+
 # Google
 DOMAIN-KEYWORD,google
+DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,ampproject.org
+DOMAIN-SUFFIX,android.com
 DOMAIN-KEYWORD,gmail
 DOMAIN-KEYWORD,youtube
 DOMAIN-SUFFIX,youtu.be
-# Instagram
+# Ins
 DOMAIN-KEYWORD,instagram
+
 # Meta
 DOMAIN-KEYWORD,facebook
 DOMAIN-SUFFIX,fb.me
 DOMAIN-SUFFIX,fbcdn.net
 DOMAIN-SUFFIX,oculuscdn.com
 DOMAIN-SUFFIX,oculus.com
-DOMAIN-KEYWORD,whatsapp
+
 # Twitter
 DOMAIN-KEYWORD,twitter
 DOMAIN-SUFFIX,twimg.com
+
+# WhatsApp
+DOMAIN-KEYWORD,whatsapp
+
+# Other
+DOMAIN-SUFFIX,letsencrypt.org
+DOMAIN-SUFFIX,ytimg.com
+DOMAIN-KEYWORD,blogspot
+DOMAIN-SUFFIX,tw
+
 # Wikimedia Foundation
 DOMAIN-SUFFIX,wikimedia.org
 DOMAIN-SUFFIX,wikipedia.org
