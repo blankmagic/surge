@@ -2,7 +2,6 @@
 # This file contains data from:
 # - https://core.telegram.org/resources/cidr.txt (last updated: 2021-10-01T16:51:55.000Z)
 
-DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 IP-CIDR,5.28.195.2/32,no-resolve
 IP-CIDR,91.105.192.0/23,no-resolve
 IP-CIDR,91.108.4.0/22,no-resolve
@@ -21,7 +20,6 @@ IP-CIDR6,2001:b28:f23c::/48,no-resolve
 IP-CIDR6,2a0a:f280::/32,no-resolve
 
 # This file contains domains used by Telegram Messenger
-DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN-SUFFIX,telegram.space
 DOMAIN-SUFFIX,cdn-telegram.org
 DOMAIN-SUFFIX,telegram.org
