@@ -71,6 +71,42 @@ DOMAIN-SUFFIX,battle.net
 DOMAIN-SUFFIX,blizzard.com
 DOMAIN-SUFFIX,blzstatic.cn
 
+# >> ByteDance / Douyin (TikTok China)
+# 核心域名
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,douyincdn.com
+DOMAIN-SUFFIX,douyinvod.com
+DOMAIN-SUFFIX,douyinpic.com
+DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,iesdouyin.com
+# 字节跳动通用业务 (头条/图虫/飞书国内版)
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,bytedance.net
+DOMAIN-SUFFIX,bytedancedns.net
+DOMAIN-SUFFIX,bytedance.com.cn
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,bytecdn.cn
+DOMAIN-SUFFIX,byteicdn.com
+DOMAIN-SUFFIX,bytegoofy.com
+DOMAIN-SUFFIX,bytedance.net
+# 视频与流媒体服务
+DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,toutiao.com
+DOMAIN-SUFFIX,toutiaocloud.com
+DOMAIN-SUFFIX,toutiaopage.com
+DOMAIN-SUFFIX,toutiaostatic.com
+DOMAIN-SUFFIX,toutiaoimg.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-SUFFIX,volccdn.com
+DOMAIN-SUFFIX,vcloud.com.cn
+# 其他关联
+DOMAIN-SUFFIX,ixigua.com
+DOMAIN-SUFFIX,xigua-static.com
+DOMAIN-SUFFIX,huoshan.com
+DOMAIN-SUFFIX,huoshanzhibo.com
+
 # > CCTV
 DOMAIN-SUFFIX,cctv.cn
 DOMAIN-SUFFIX,cctv.com
@@ -228,6 +264,29 @@ DOMAIN-SUFFIX,v-56.com
 
 # >> Stream
 DOMAIN-SUFFIX,jstarkan.com
+
+# >> Tencent
+DOMAIN-SUFFIX,gtimg.cn
+DOMAIN-SUFFIX,gtimg.com
+DOMAIN-SUFFIX,idqqimg.com
+DOMAIN-SUFFIX,igamecj.com
+DOMAIN-SUFFIX,myapp.com
+DOMAIN-SUFFIX,myqcloud.com
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,qq.com.cn
+DOMAIN-SUFFIX,qqmail.com
+DOMAIN-SUFFIX,qqurl.com
+DOMAIN-SUFFIX,smtcdns.com
+DOMAIN-SUFFIX,smtcdns.net
+DOMAIN-SUFFIX,tencent.com
+DOMAIN-SUFFIX,tencent.com.cn
+DOMAIN-SUFFIX,tencent-cloud.net
+DOMAIN-SUFFIX,tencentmusic.com
+DOMAIN-SUFFIX,tenpay.com
+# 腾讯视频专用
+DOMAIN-SUFFIX,v.qq.com
+DOMAIN-SUFFIX,video.qq.com
+DOMAIN-SUFFIX,vv.video.qq.com
 
 # >> Tesla
 DOMAIN-SUFFIX,52tesla.com
