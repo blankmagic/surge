@@ -1,51 +1,88 @@
-# This file contains domains of OpenAI, Claude.
+# AI
+# OpenAI ChatGPT
+AND, ((DOMAIN-KEYWORD, chatgpt-async-webps-prod-), (DOMAIN-SUFFIX, webpubsub.azure.com))
+AND, ((DOMAIN-KEYWORD, openaicom-api-), (DOMAIN-SUFFIX, azurefd.net))
+DOMAIN, chatgpt.livekit.cloud
+DOMAIN, host.livekit.cloud
+DOMAIN-SUFFIX, turn.livekit.cloud
+DOMAIN, openai.com.cdn.cloudflare.net
+DOMAIN, openaiapi-site.azureedge.net
+DOMAIN, openaicomproductionae4b.blob.core.windows.net
+DOMAIN, production-openaicom-storage.azureedge.net
+DOMAIN-SUFFIX, chat.com
+DOMAIN-SUFFIX, chatgpt.com
+DOMAIN-SUFFIX, oaistatic.com
+DOMAIN-SUFFIX, oaiusercontent.com
+DOMAIN-SUFFIX, openai.com
+DOMAIN-SUFFIX, sora.com
 
-DOMAIN-SUFFIX,generativeai.google
-DOMAIN,antigravity.google
-DOMAIN-SUFFIX,notebooklm.google
-DOMAIN-SUFFIX,deepmind.google
-DOMAIN-SUFFIX,gemini.google
-DOMAIN,antigravity-unleash.goog
-DOMAIN,ai.google.dev
-DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN,daily-cloudcode-pa.googleapis.com
-DOMAIN,robinfrontend-pa.googleapis.com
-DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
-DOMAIN,aisandbox-pa.googleapis.com
-DOMAIN-SUFFIX,geller-pa.googleapis.com
-DOMAIN,aida.googleapis.com
-DOMAIN,gateway.ai.cloudflare.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,deepmind.com
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,notebooklm.google.com
-DOMAIN-SUFFIX,makersuite.google.com
-DOMAIN,alkalicore-pa.clients6.google.com
-DOMAIN-SUFFIX,aistudio.google.com
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN,jules.google.com
-DOMAIN-SUFFIX,bard.google.com
-DOMAIN,api.github.com
-DOMAIN-SUFFIX,claude.com
-DOMAIN-SUFFIX,sora.com
-DOMAIN-SUFFIX,groq.com
-DOMAIN-SUFFIX,grok.com
-DOMAIN-SUFFIX,chat.com
-DOMAIN-SUFFIX,poe.com
-DOMAIN-SUFFIX,ai.com
-DOMAIN-SUFFIX,clipdrop.co
-DOMAIN-SUFFIX,perplexity.ai
-DOMAIN,openrouter.ai
-DOMAIN,api.jetbrains.ai
-DOMAIN-SUFFIX,openart.ai
-DOMAIN-SUFFIX,jasper.ai
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,meta.ai
-DOMAIN-SUFFIX,dify.ai
-DOMAIN-SUFFIX,x.ai
-DOMAIN-SUFFIX,g.ai
-DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
-URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
+# Apple Intelligence
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.akamaized.net
+DOMAIN-SUFFIX,gateway.icloud.com
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN-SUFFIX,cp4.cloudflare.com
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX,apps.mzstatic.com
+
+# GitHub Copilot
+DOMAIN, api.githubcopilot.com
+DOMAIN, copilot-proxy.githubusercontent.com
+DOMAIN, copilot.microsoft.com
+DOMAIN, sydney.bing.com
+DOMAIN-SUFFIX, githubcopilot.com
+
+# Google Gemini
+DOMAIN, ai.google.dev
+DOMAIN, aida.googleapis.com
+DOMAIN, aistudio.google.com
+DOMAIN, alkalicore-pa.clients6.google.com
+DOMAIN, alkalimakersuite-pa.clients6.google.com
+DOMAIN, bard.google.com
+DOMAIN, deepmind.com
+DOMAIN, deepmind.google
+DOMAIN, geller-pa.googleapis.com
+DOMAIN, gemini.google.com
+DOMAIN, generativeai.google
+DOMAIN, generativelanguage.googleapis.com
+DOMAIN, makersuite.google.com
+DOMAIN, proactivebackend-pa.googleapis.com
+
+# Anthropic Claude
+DOMAIN-SUFFIX, anthropic.com
+DOMAIN-SUFFIX, claude.ai
+DOMAIN-SUFFIX, claude.com
+DOMAIN-SUFFIX, clau.de
+DOMAIN-SUFFIX, claudeusercontent.com
+IP-CIDR, 160.79.104.0/23, no-resolve
+IP-CIDR6, 2607:6bc0::/48, no-resolve
+
+# JetBrains AI
+DOMAIN-SUFFIX, grazie.ai
+DOMAIN-SUFFIX, grazie.aws.intellij.net
+DOMAIN-SUFFIX, jetbrains.ai
+
+# Meta AI
+DOMAIN, imagine.meta.com
+DOMAIN-SUFFIX, meta.ai
+
+# Perplexity AI
+DOMAIN-SUFFIX, pplx.ai
+DOMAIN-SUFFIX, perplexity.ai
+DOMAIN-SUFFIX, perplexity.com
+
+# Mistral AI
+DOMAIN, chat.mistral.ai
+DOMAIN, console.mistral.ai
+DOMAIN-SUFFIX, mistral.ai
+
+# Grok AI
+DOMAIN, api.x.ai
+DOMAIN-SUFFIX, x.ai
+DOMAIN-SUFFIX, grok.com
+
+# Trae AI
+DOMAIN, trae-api-sg.mchost.guru
+DOMAIN-SUFFIX, trae.ai
